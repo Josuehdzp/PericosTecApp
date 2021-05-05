@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="fondoazul">#012640</color>
+    <!--<color name="fondogrisoscuro">#313131"</color>-->
+
+    <color name="colorPrimary">#007F82</color> <!-- Color de la barra de accion -->
+    <color name="colorPrimaryDark">#016A6D</color> <!-- Color de la barra de notificaciones -->
+    <color name="colorAccent">#FC6705</color>
+    <color name="naranjaprincipal">#F68212</color>
+    <color name="zero">#ca4934</color>
+    <color name="hiro">#57bdc7</color>
+    <color name="black_overlay">#9C333333</color>
+    <color name="black_overlay2">#17000000</color>
+    <color name="transss">#74FDFDFD</color>
+    <color name="transparente">#0FFFFFFF</color>
+    <color name="tran22">#9FFDFDFD</color>
+    <color name="Color">#007F82</color>
+    <!--<color name="transss">#4FFDFDFD</color>-->
+    <color name="transssBlack">#3B000000</color>
+    <color name="trans">#00FF9E80</color>
+    <color name="naranja_bajo">#FF9E80</color>
+
+    <color name="black">#000000</color>
+    <color name="light_grey">#e4e4e4</color>
+    <color name="grey">#8b8b8b</color>
+    <color name="dark_grey">#696969</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blanquillo">#E7E7E7</color>
+
+
+    <color name="fondo">#9E001344</color>
+    <color name="ora">#D1001344</color>
+    <color name="ora2">#EE001344</color>
+    <color name="fig1">#E9FFFFFF</color>
+
+    <color name="grisoscuro">#313131</color>
+    <color name="grisclaro">#DAD9D9</color>
+
+    <color name="blanco">#FFFFFF</color>
+    <color name="naranja">#FF6D00</color>
+    <color name="rojo">#DD2C00</color>
+    <color name="rojo_bajo">#FF5252</color>
+    <color name="azul">#2962FF</color>
+    <color name="verde">#2AB16F</color>
+    <color name="amarillo">#FFFF00</color>
+    <color name="startblue">#4bb6ef</color>
+
+    <color name="azulnotas">#4A78FF</color>
+    <color name="morado">#9568E9</color>
+    <color name="rosa">#E968C4</color>
+    <color name="cafe">#866021</color>
+
+    <color name="negroprincipal">#3F4751</color>
+    <color name="verdeicono">#07CC66</color>
+    <color name="amarilloicono">#FDD301</color>
+    <color name="naranjaicon">#FC6814</color>
+
+</resources>

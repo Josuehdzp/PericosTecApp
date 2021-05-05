@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negroprincipal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Feeds.FeedScrollingActivity"
+    tools:showIn="@layout/feed_scrolling">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="4dp"
+        android:background="@drawable/boton_orillas_blanco"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/idFeedScrollCompletoCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/negroprincipal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:background="@drawable/boton_relleno_blanco_pequeno">
+
+                                <TextView
+                                    android:id="@+id/idFeedScrollCompletoStatus"
+                                    style="@style/UbuntuTema"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:textColor="@color/black"
+                                    android:text="Agrego fotos"
+                                    android:textSize="10sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/idFeedScrollCompletoStoryContenedor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:background="@drawable/boton_relleno_blanco_pequeno">
+
+                                <TextView
+                                    android:id="@+id/idFeedScrollCompletoStory"
+                                    style="@style/UbuntuTema"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/ubuntu_light"
+                                    android:padding="5dp"
+                                    android:textColor="@color/black"
+                                    android:text="@string/especialidad_titulo"
+                                    android:textSize="10sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <Button
+                                android:layout_width="5dp"
+                                android:layout_height="5dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/buttonstyle"
+                                android:backgroundTint="@color/blanco" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/boton_relleno_blanco" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/idFeedScrollCompletoMensaje"
+                            style="@style/UbuntuTema"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:autoLink="all"
+                            android:textIsSelectable="true"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:text="@string/mision_texto"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/idFeedScrollCompletoDescripcion"
+                            style="@style/UbuntuTema"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:autoLink="all"
+                            android:textIsSelectable="true"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:text="@string/mision_texto"
+                            android:textSize="15sp" />
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/idFeedScrollCompletoFullpicture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            app:riv_corner_radius="7dp" />
+
+                        <TextView
+                            android:id="@+id/idFeedScrollCompletoPermalink"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/idFeedScrollCompletoVerFacebook"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/boton_orillas_blanco"
+                                android:backgroundTint="@color/azulnotas">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginEnd="4dp"
+                                        android:src="@drawable/ic_like" />
+
+                                    <TextView
+                                        style="@style/UbuntuTema"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="7dp"
+                                        android:fontFamily="@font/ubuntu_medium"
+                                        android:text="Ver en Facebook"
+                                        android:textSize="9sp" />
+
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/idFeedScrollCompletoCompartir"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/boton_orillas_blanco"
+                                android:backgroundTint="@color/colorPrimary">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginEnd="4dp"
+                                        android:src="@drawable/icono_escencial_enviar_mensaje" />
+
+                                    <TextView
+                                        style="@style/UbuntuTema"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="7dp"
+                                        android:fontFamily="@font/ubuntu_medium"
+                                        android:text="Compartir"
+                                        android:textSize="9sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

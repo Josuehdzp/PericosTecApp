@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/gradientbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/idDepartamentosToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/interfaz_overlay_bajo_invertida"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme"
+            app:theme="@style/ToolbarColor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/idDepartamentosToolbarTexto"
+                    style="@style/UbuntuTema"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="Departamentos"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/pericostectitulo" />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/idCardDptoProcesosTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/amarilloicono"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/icono_molecula"/>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:background="@drawable/interfaz_overlay_bajo">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="bottom"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_margin="2dp"
+                                        android:gravity="bottom"
+                                        android:background="@color/blanco"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="2dp"
+                                        android:gravity="bottom"
+                                        android:fontFamily="@font/ubuntu"
+                                        android:textColor="@color/blanco"
+                                        android:textStyle="bold"
+                                        style="@style/UbuntuTema"
+                                        android:text="Diagrama de Procesos"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp"/>
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <RelativeLayout
+                    android:id="@+id/idCardDptoProcesosContenedor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|fill_horizontal"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/idCardDptoProcesosInscripcion"
+                                android:layout_width="160dp"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/azulnotas"
+                                app:cardCornerRadius="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_centerInParent="true"
+                                            android:scaleType="centerInside"
+                                            android:src="@drawable/icono_correccion"/>
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_alignParentBottom="true"
+                                            android:background="@drawable/interfaz_overlay">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/interfaz_overlay_bajo"
+                                                android:layout_gravity="bottom"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="2dp"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:textColor="@color/blanco"
+                                                    android:textStyle="bold"
+                                                    android:text="Inscripción"
+                                                    style="@style/UbuntuTema"
+                                                    android:textAlignment="center"
+                                                    android:textSize="14sp"/>
+
+                                            </LinearLayout>
+
+                                        </FrameLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/idCardDptoProcesosCurso"
+                                android:layout_width="160dp"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/azulnotas"
+                                app:cardCornerRadius="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_centerInParent="true"
+                                            android:scaleType="centerInside"
+                                            android:src="@drawable/icono_pregunta"/>
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_alignParentBottom="true"
+                                            android:background="@drawable/interfaz_overlay">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/interfaz_overlay_bajo"
+                                                android:layout_gravity="bottom"
+                                                android:orientation="vertical">
+
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="2dp"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:textColor="@color/blanco"
+                                                    android:textStyle="bold"
+                                                    android:text="Gestion del Curso"
+                                                    style="@style/UbuntuTema"
+                                                    android:textAlignment="center"
+                                                    android:textSize="14sp"/>
+
+                                            </LinearLayout>
+
+                                        </FrameLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/idCardDptoProcesosActividades"
+                                android:layout_width="160dp"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/verdeicono"
+                                app:cardCornerRadius="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_centerInParent="true"
+                                            android:scaleType="centerInside"
+                                            android:src="@drawable/icono_teatro"/>
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_alignParentBottom="true"
+                                            android:background="@drawable/interfaz_overlay">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/interfaz_overlay_bajo"
+                                                android:layout_gravity="bottom"
+                                                android:orientation="vertical">
+
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="2dp"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:textColor="@color/blanco"
+                                                    android:textStyle="bold"
+                                                    android:text="Actividades Complementarias"
+                                                    style="@style/UbuntuTema"
+                                                    android:textAlignment="center"
+                                                    android:textSize="13sp"/>
+
+                                            </LinearLayout>
+
+                                        </FrameLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/idCardDptoProcesosResidencia"
+                                android:layout_width="160dp"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/azulnotas"
+                                app:cardCornerRadius="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_centerInParent="true"
+                                            android:scaleType="centerInside"
+                                            android:src="@drawable/icono_university"/>
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_alignParentBottom="true"
+                                            android:background="@drawable/interfaz_overlay">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/interfaz_overlay_bajo"
+                                                android:layout_gravity="bottom"
+                                                android:orientation="vertical">
+
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="2dp"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:textColor="@color/blanco"
+                                                    android:textStyle="bold"
+                                                    android:text="Residencia Profesional"
+                                                    style="@style/UbuntuTema"
+                                                    android:textAlignment="center"
+                                                    android:textSize="14sp"/>
+
+                                            </LinearLayout>
+
+
+                                        </FrameLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/idCardDptoProcesosTitulacion"
+                                android:layout_width="160dp"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/verdeicono"
+                                app:cardCornerRadius="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_centerInParent="true"
+                                            android:scaleType="centerInside"
+                                            android:src="@drawable/icono_birrete"/>
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_alignParentBottom="true"
+                                            android:background="@drawable/interfaz_overlay">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/interfaz_overlay_bajo"
+                                                android:layout_gravity="bottom"
+                                                android:orientation="vertical">
+
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="2dp"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:textColor="@color/blanco"
+                                                    android:textStyle="bold"
+                                                    android:text="Titulación"
+                                                    style="@style/UbuntuTema"
+                                                    android:textAlignment="center"
+                                                    android:textSize="14sp"/>
+
+                                            </LinearLayout>
+
+                                        </FrameLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/idCardDptoVinculacionTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:background="@color/negroprincipal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/icono_estudiante"/>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/interfaz_overlay_bajo">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_margin="2dp"
+                                        android:background="@color/blanco"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="2dp"
+                                        android:fontFamily="@font/ubuntu"
+                                        android:textColor="@color/blanco"
+                                        android:textStyle="bold"
+                                        style="@style/UbuntuTema"
+                                        android:text="Vinculación"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp"/>
+
+                                </LinearLayout>
+                            </FrameLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <RelativeLayout
+                    android:id="@+id/idCardDptoVinculacionContenedor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/idCardDptoVinculacionServicio"
+                                android:layout_width="160dp"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/azulnotas"
+                                app:cardCornerRadius="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_centerInParent="true"
+                                            android:scaleType="centerInside"
+                                            android:src="@drawable/icono_voluntario"/>
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_alignParentBottom="true"
+                                            android:background="@drawable/interfaz_overlay">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/interfaz_overlay_bajo"
+                                                android:layout_gravity="bottom"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="2dp"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:textColor="@color/blanco"
+                                                    android:textStyle="bold"
+                                                    android:text="Formatos de Servicio Social"
+                                                    style="@style/UbuntuTema"
+                                                    android:textAlignment="center"
+                                                    android:textSize="14sp"/>
+
+                                            </LinearLayout>
+
+                                        </FrameLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/idCardDptoVinculacionResidencia"
+                                android:layout_width="160dp"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/amarilloicono"
+                                app:cardCornerRadius="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_centerInParent="true"
+                                            android:scaleType="centerInside"
+                                            android:src="@drawable/icono_educacion"/>
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_alignParentBottom="true"
+                                            android:background="@drawable/interfaz_overlay">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/interfaz_overlay_bajo"
+                                                android:layout_gravity="bottom"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="2dp"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:textColor="@color/blanco"
+                                                    android:textStyle="bold"
+                                                    android:text="Formatos de Residencia Profesional"
+                                                    style="@style/UbuntuTema"
+                                                    android:textAlignment="center"
+                                                    android:textSize="14sp"/>
+
+                                            </LinearLayout>
+
+                                        </FrameLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/idCardDptoExtraescolaresTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/negroprincipal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/icono_deporte"/>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/interfaz_overlay_bajo">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    style="@style/UbuntuTema"
+                                    android:text="Proximamente"
+                                    android:textSize="26sp"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_margin="2dp"
+                                        android:background="@color/blanco"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="2dp"
+                                        android:fontFamily="@font/ubuntu"
+                                        android:textColor="@color/blanco"
+                                        android:textStyle="bold"
+                                        style="@style/UbuntuTema"
+                                        android:text="Extraescolares"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp"/>
+
+                                </LinearLayout>
+                            </FrameLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:id="@+id/idCardDptoExtraescolaresContenedor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="160dp"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/amarilloicono"
+                                app:cardCornerRadius="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_centerInParent="true"
+                                            android:scaleType="centerInside" />
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_alignParentBottom="true"
+                                            android:background="@drawable/interfaz_overlay">
+
+
+                                        </FrameLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="160dp"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/amarilloicono"
+                                app:cardCornerRadius="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_centerInParent="true"
+                                            android:scaleType="centerInside" />
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:layout_alignParentBottom="true"
+                                            android:background="@drawable/interfaz_overlay">
+
+
+                                        </FrameLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_sep_2019" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/icono_itsvc_blanco" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    tools:context=".PantallaMain.Tecnologico.Nosotros">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_Nosotros"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@android:color/transparent"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme"
+        android:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|snap"
+            app:toolbarId="@+id/toolbar">
+
+
+            <com.flaviofaria.kenburnsview.KenBurnsView
+                android:id="@+id/imageViewAppBarNOSOTROS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/interfaz_overlay_bajo"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_nostros" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

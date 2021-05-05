@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradientbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/idLoginFotoHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/edificio_3" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/interfaz_overlay_bajo" />
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="35dp"
+                            android:layout_centerHorizontal="true"
+                            app:riv_corner_radius="20dp"
+                            android:src="@drawable/itsvclogo"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/negroprincipal"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:autoSizeMaxTextSize="16sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="2sp"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:textColor="@color/blanco"
+                            android:textSize="20dp"
+                            android:text="Iniciar sesión"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:autoSizeMaxTextSize="16sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="2sp"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:textColor="@color/blanco"
+                            android:text="Correo"/>
+
+                        <EditText
+                            android:id="@+id/idCorreoLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:hint="Correo"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/blanco"
+                            android:textColorHint="@color/grisclaro" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:autoSizeMaxTextSize="16sp"
+                            android:autoSizeMinTextSize="10sp"
+                            android:autoSizeStepGranularity="2sp"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:textColor="@color/blanco"
+                            android:text="Contraseña"/>
+
+                        <EditText
+                            android:id="@+id/idContraseñaLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:hint="Contraseña"
+                            android:inputType="textPassword"
+                            android:textColor="@color/blanco"
+                            android:textColorHint="@color/grisclaro" />
+
+                        <CheckBox
+                            android:id="@+id/idContraseñaLoginVisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            style="@style/UbuntuTema"
+                            android:fontFamily="@font/ubuntu"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold"
+                            android:text="Mostrar contraseña"
+                            />
+
+                        <Button
+                            android:id="@+id/idLoginLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/boton_orillas_blanco"
+                            android:backgroundTint="@color/colorAccent"
+                            style="@style/UbuntuTema"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:text="Iniciar sesión" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:padding="5dp"
+                            style="@style/UbuntuTema"
+                            android:textSize="13sp"
+                            android:text="¿No tienes te has registrado?"/>
+
+                        <Button
+                            android:id="@+id/idRegistroLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:padding="5dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/boton_orillas_blanco"
+                            android:backgroundTint="@color/colorAccent"
+                            style="@style/UbuntuTema"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="Registrarse"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/idLoginToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/interfaz_overlay_bajo_invertida"
+                    android:minHeight="?attr/actionBarSize"
+                    app:popupTheme="@style/AppTheme"
+                    app:theme="@style/ToolbarColor">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/idEstudiantesToolbarTexto"
+                            style="@style/UbuntuTema"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:text="Iniciar Sesión"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="5dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/pericostectitulo" />
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/idLoginProgressBar"
+                    style="@style/AVLoadingIndicatorView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    app:indicatorName="BallClipRotateMultipleIndicator"
+                    app:indicatorColor="@color/blanco"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

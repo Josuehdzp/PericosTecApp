@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutNotasCompletaLinear"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idNotasCompletaToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/interfaz_overlay_bajo_invertida"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/ToolbarColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/idNotasCompletaToolbarTexto"
+                style="@style/UbuntuTema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:text="Nota"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/pericostectitulo" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/idLayoutPadreFondoNotasCompleta"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/grisclaro"
+                app:cardCornerRadius="7dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/idCompNotasContenedor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/grey"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="7dp"
+                    app:contentPadding="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            tools:ignore="UselessParent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+
+                                <TextView
+                                    android:id="@+id/idCompNotasTitulo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="13dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/ubuntu_light"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.3"
+                                    android:shadowRadius="1.6"
+                                    android:text="Titulo: "
+                                    android:textColor="@color/blanco"
+                                    android:textStyle="bold" />
+
+
+                                <EditText
+                                    android:id="@+id/idCompEditNotasTitulo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="6"
+                                    android:focusable="true"
+                                    android:fontFamily="@font/ubuntu_light"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.3"
+                                    android:shadowRadius="1.6"
+                                    android:text="Titulo de la nota"
+                                    android:textColor="@color/blanco" />
+
+
+                                <TextView
+                                    android:id="@+id/idCompNotasCuerpo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="13dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/ubuntu_light"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.3"
+                                    android:shadowRadius="1.6"
+                                    android:singleLine="true"
+                                    android:text="Nota: "
+                                    android:textColor="@color/blanco"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/idCompEditNotasCuerpo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="6"
+                                    android:focusable="true"
+                                    android:fontFamily="@font/ubuntu_light"
+                                    android:nestedScrollingEnabled="true"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.3"
+                                    android:shadowRadius="1.6"
+                                    android:text="Cuerpo de la nota"
+                                    android:textColor="@color/blanco" />
+
+
+                                <TextView
+                                    android:id="@+id/idCompNotasColorInvisible"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/ubuntu_light"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.3"
+                                    android:shadowRadius="1.6"
+                                    android:text="Color: "
+                                    android:textColor="@color/blanco"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/idCompNotasFecha"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="13dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/ubuntu_light"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.3"
+                                    android:shadowRadius="1.6"
+                                    android:singleLine="true"
+                                    android:text="Fecha: "
+                                    android:textColor="@color/blanco"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/idCompEditNotasFecha"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="6"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/ubuntu_light"
+                                    android:inputType="date"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.3"
+                                    android:shadowRadius="1.6"
+                                    android:text="Dale fecha a tu nota"
+                                    android:textColor="@color/blanco" />
+
+
+                                <TextView
+                                    android:id="@+id/idCompNotasHora"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="13dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/ubuntu_light"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.3"
+                                    android:shadowRadius="1.6"
+                                    android:singleLine="true"
+                                    android:text="Hora: "
+                                    android:textColor="@color/blanco"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/idCompEditNotasHora"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="6"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/ubuntu_light"
+                                    android:inputType="time"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.3"
+                                    android:shadowRadius="1.6"
+                                    android:text="Dale hora a tu nota"
+                                    android:textColor="@color/blanco" />
+
+                                <TextView
+                                    android:id="@+id/idCompNotasColor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="13dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1.5"
+                                    android:shadowDy="1.3"
+                                    android:shadowRadius="1.6"
+                                    android:singleLine="true"
+                                    android:text="Color: "
+                                    android:textColor="@color/blanco"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/ubuntu_light" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/idCompEditNotasColorContenedor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="12dp"
+                                    app:cardBackgroundColor="@color/grisclaro"
+                                    >
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/idCompEditNotasColor"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        app:cardCornerRadius="12dp"
+                                        android:layout_margin="3dp"
+                                        app:cardElevation="6dp"
+                                        app:cardBackgroundColor="@color/grisoscuro"
+                                        />
+
+                                </androidx.cardview.widget.CardView>
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end"
+                                    android:orientation="horizontal"
+                                    android:padding="6dp">
+
+
+                                    <Button
+                                        android:id="@+id/idCompAgregarfabCancelar"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="10dp"
+                                        android:background="@drawable/boton_relleno_blanco"
+                                        android:backgroundTint="@color/rojo"
+                                        android:fontFamily="@font/ubuntu_light"
+                                        style="@style/UbuntuTema"
+                                        android:text="Cancelar" />
+
+                                    <Button
+                                        android:id="@+id/idCompAgregarfabAceptar"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        android:background="@drawable/boton_relleno_blanco"
+                                        android:backgroundTint="@color/verde"
+                                        style="@style/UbuntuTema"
+                                        android:text="Guardar" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/idCompEditNotasBotonEditar"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="10dp"
+                                        android:background="@drawable/boton_relleno_blanco"
+                                        android:backgroundTint="@color/naranjaprincipal"
+                                        style="@style/UbuntuTema"
+                                        android:text="Editar" />
+
+                                    <Button
+                                        android:id="@+id/idCompEditNotasBotonBorras"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/boton_relleno_blanco"
+                                        android:backgroundTint="@color/rojo"
+                                        style="@style/UbuntuTema"
+                                        android:text="Borrar" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

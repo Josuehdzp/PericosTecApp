@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_isic"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_ISIC" />
+
+    <item
+        android:id="@+id/navigation_iial"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_IIAL" />
+
+    <item
+        android:id="@+id/navigation_ifor"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_IFOR" />
+
+    <item
+        android:id="@+id/navigation_igeo"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_IGEO" />
+
+    <item
+        android:id="@+id/navigation_igem"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_IGEM" />
+
+</menu>

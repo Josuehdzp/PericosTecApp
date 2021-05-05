@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.github.florent37.arclayout.ArcLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:elevation="10dp"
+                        app:arc_position="bottom"
+                        app:arc_height="20dp"
+                        app:arc_cropDirection="cropOutside">
+
+                        <com.flaviofaria.kenburnsview.KenBurnsView
+                            android:id="@+id/idEstudiantesFotoHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:src="@drawable/edificio"
+                            android:scaleType="centerCrop"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/interfaz_overlay_bajo" />
+                    </com.github.florent37.arclayout.ArcLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true">
+
+                <FrameLayout
+                    android:id="@+id/idEstudiantesContenedor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="200dp">
+
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/boton_relleno_blanco"
+                                android:backgroundTint="@color/negroprincipal"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="23dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        tools:ignore="TooDeepLayout">
+                                        <TextView
+                                            android:id="@+id/idEstudiantesNombreUsuario"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="15dp"
+                                            android:layout_marginTop="10dp"
+                                            style="@style/UbuntuTema"
+                                            android:text="Nombre"
+                                            android:textStyle="bold"
+                                            android:textSize="16sp" />
+
+                                        <com.wang.avi.AVLoadingIndicatorView
+                                            android:id="@+id/idEstudiantesProgressBarNombre"
+                                            style="@style/AVLoadingIndicatorView"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginStart="15dp"
+                                            android:layout_gravity="start"
+                                            app:indicatorName="BallPulseIndicator"
+                                            app:indicatorColor="@color/blanco"
+                                            android:visibility="visible"
+                                            />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:id="@+id/idEstudiantesCorreoUsuario"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="15dp"
+                                            android:layout_marginTop="10dp"
+                                            style="@style/UbuntuTema"
+                                            android:text="Correo"
+                                            android:textSize="13sp" />
+                                        <com.wang.avi.AVLoadingIndicatorView
+                                            android:id="@+id/idEstudiantesProgressBarCorreo"
+                                            style="@style/AVLoadingIndicatorView"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginStart="15dp"
+                                            android:layout_gravity="start"
+                                            app:indicatorName="BallPulseIndicator"
+                                            app:indicatorColor="@color/blanco"
+                                            android:visibility="visible"
+                                            />
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="3dp"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:background="@drawable/boton_relleno_blanco" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:baselineAligned="false"
+                                        tools:ignore="DisableBaselineAlignment">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:elevation="3dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/idEstudiantesTituloMatriculaUsuario"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="10dp"
+                                                style="@style/UbuntuTema"
+                                                android:text="Matricula"
+                                                android:textAlignment="center"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:id="@+id/idEstudiantesMatriculaUsuario"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="10dp"
+                                                android:layout_marginEnd="10dp"
+                                                style="@style/UbuntuTema"
+                                                android:text="matricula"
+                                                android:textAlignment="center"
+                                                android:textSize="12sp" />
+
+                                            <com.wang.avi.AVLoadingIndicatorView
+                                                android:id="@+id/idEstudiantesProgressBarMatricula"
+                                                style="@style/AVLoadingIndicatorView"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                app:indicatorName="BallPulseIndicator"
+                                                app:indicatorColor="@color/blanco"
+                                                android:visibility="visible"
+                                                />
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:id="@+id/idEstudiantesTituloCarreraUsuario"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="10dp"
+                                                style="@style/UbuntuTema"
+                                                android:text="Carrera"
+                                                android:textAlignment="center"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+                                            <TextView
+                                                android:id="@+id/idEstudiantesCarreraUsuario"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="10dp"
+                                                android:layout_marginEnd="10dp"
+                                                style="@style/UbuntuTema"
+                                                android:text="carrera"
+                                                android:textAlignment="center"
+                                                android:textSize="10sp"
+                                                tools:ignore="SmallSp" />
+
+                                            <com.wang.avi.AVLoadingIndicatorView
+                                                android:id="@+id/idEstudiantesProgressBarCarrera"
+                                                style="@style/AVLoadingIndicatorView"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                app:indicatorName="BallPulseIndicator"
+                                                app:indicatorColor="@color/blanco"
+                                                android:visibility="visible"
+                                                />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:id="@+id/idEstudiantesIconoCarreraUsuario"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:padding="5dp"
+                                                android:layout_gravity="center"
+                                                android:adjustViewBounds="true"
+                                                android:src="@drawable/itsvclogo"
+                                                android:contentDescription="@string/todo" />
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/cardEstu1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="150dp"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:baselineAligned="false"
+                                        tools:ignore="DisableBaselineAlignment">
+
+                                        <RelativeLayout
+                                            android:id="@+id/cardhorario"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="2dp"
+                                            android:padding="3dp"
+                                            android:background="@drawable/boton_relleno_gradient"
+                                            android:backgroundTint="@color/amarilloicono"
+                                            android:layout_weight="1"
+                                            tools:ignore="NestedWeights">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                tools:ignore="UseCompoundDrawables">
+
+
+                                                <ImageView
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="30dp"
+                                                    android:src="@drawable/icono_escencial_horario"
+                                                    android:contentDescription="@string/todo" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    style="@style/UbuntuTema"
+                                                    android:text="Horario personalizado"
+                                                    android:textAlignment="center"
+                                                    android:textSize="12sp" />
+
+
+                                            </LinearLayout>
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/cardnotas"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="2dp"
+                                            android:padding="3dp"
+                                            android:background="@drawable/boton_relleno_gradient"
+                                            android:backgroundTint="@color/colorAccent"
+                                            android:layout_weight="1"
+                                            android:elevation="5dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                tools:ignore="UseCompoundDrawables">
+
+                                                <ImageView
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="30dp"
+                                                    android:src="@drawable/icono_escencial_notas_color"
+                                                    android:contentDescription="@string/todo" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    style="@style/UbuntuTema"
+                                                    android:text="Tus Notas"
+                                                    android:textAlignment="center"
+                                                    android:textSize="15sp" />
+                                            </LinearLayout>
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/cardchat"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="2dp"
+                                            android:padding="5dp"
+                                            android:background="@drawable/boton_relleno_gradient"
+                                            android:backgroundTint="@color/colorPrimary"
+                                            android:layout_weight="1"
+                                            android:elevation="5dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="horizontal">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="1"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    tools:ignore="UseCompoundDrawables">
+
+                                                    <ImageView
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="30dp"
+                                                        android:src="@drawable/icono_escencial_chat"
+                                                        android:contentDescription="@string/todo" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        style="@style/UbuntuTema"
+                                                        android:text="Chat"
+                                                        android:textAlignment="center"
+                                                        android:textSize="15sp"/>
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/cardEstu3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boton_relleno_blanco"
+                                        android:backgroundTint="@color/rojo_bajo"
+                                        android:baselineAligned="false"
+                                        android:orientation="horizontal"
+                                        tools:ignore="DisableBaselineAlignment">
+
+                                        <RelativeLayout
+                                            android:id="@+id/idEstudiantescardCerrarSesion"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/boton_relleno_gradient"
+                                            android:backgroundTint="@color/rojo_bajo"
+                                            tools:ignore="NestedWeights">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:orientation="vertical">
+
+
+                                                <TextView
+                                                    style="@style/UbuntuTema"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="2dp"
+                                                    android:text="Cerrar Sesión"
+                                                    android:textAlignment="center"
+                                                    android:textSize="15sp" />
+
+
+                                            </LinearLayout>
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                </FrameLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/idEstudiantesFotoUsuario"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="150dp"
+                    android:src="@drawable/perfilpericodefault"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorAccent"/>
+
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/idEstudiantesToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:theme="@style/ToolbarColor"
+                app:popupTheme="@style/AppTheme"
+                android:background="@drawable/interfaz_overlay_bajo_invertida"
+                android:minHeight="?attr/actionBarSize" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/idEstudiantesToolbarTexto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        style="@style/UbuntuTema"
+                        android:layout_gravity="center_vertical"
+                        android:text="Estudiantes"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/pericostectitulo"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/idEstudiantesProgressBar"
+                style="@style/AVLoadingIndicatorView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                app:indicatorName="BallClipRotatePulseIndicator"
+                app:indicatorColor="@color/blanco"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icono_itsvc_blanco" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

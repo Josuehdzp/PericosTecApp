@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradientbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.github.florent37.arclayout.ArcLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:layout_marginBottom="50dp"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    app:arc_cropDirection="cropOutside"
+                    app:arc_height="60dp"
+                    app:arc_position="bottom">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:background="@color/negroprincipal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:layout_alignParentBottom="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/UbuntuTema"
+                                    android:layout_width="174dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Chat para tu carrera:"
+                                    android:textAlignment="center"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/idChatMenuChatNombreCarrera"
+                                    style="@style/UbuntuTema"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/titulo_sistemas"
+                                    android:textAlignment="center"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/idChatMenuChatcontArriba"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/idChatMenuChatImagenCarrera"
+                                    android:layout_width="100dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/sistemas" />
+
+                            </LinearLayout>
+
+                            <com.github.florent37.arclayout.ArcLayout
+                                android:id="@+id/idChatMenuChatCarrera"
+                                android:layout_width="300dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="15dp"
+                                android:elevation="10dp"
+                                app:arc_cropDirection="cropOutside"
+                                app:arc_height="25dp"
+                                app:arc_position="top">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary">
+
+                                    <TextView
+                                        style="@style/UbuntuTema"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="Entrar"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+                            </com.github.florent37.arclayout.ArcLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </com.github.florent37.arclayout.ArcLayout>
+
+                <com.github.florent37.arclayout.ArcLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    app:arc_cropDirection="cropOutside"
+                    app:arc_height="60dp"
+                    app:arc_position="top">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/negroprincipal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.github.florent37.arclayout.ArcLayout
+                                android:id="@+id/idChatMenuChatIndividual"
+                                android:layout_width="300dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:elevation="10dp"
+                                app:arc_cropDirection="cropOutside"
+                                app:arc_height="25dp"
+                                app:arc_position="bottom">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent">
+
+                                    <TextView
+                                        style="@style/UbuntuTema"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="Ver usuarios"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+                            </com.github.florent37.arclayout.ArcLayout>
+
+                            <LinearLayout
+                                android:id="@+id/idChatMenuChatcontAbajo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:padding="5dp"
+                                        android:src="@drawable/sistemas" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:padding="5dp"
+                                        android:src="@drawable/alimentarias" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:padding="5dp"
+                                        android:src="@drawable/forestal" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:padding="5dp"
+                                        android:src="@drawable/geocienciaslogo" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:padding="5dp"
+                                        android:src="@drawable/gestionlogo" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/UbuntuTema"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Chat Individual:"
+                                    android:textAlignment="center"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    style="@style/UbuntuTema"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/chat_individual_txt"
+                                    android:textAlignment="center"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </com.github.florent37.arclayout.ArcLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/idChatMenuChatToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_medium"
+                android:shadowColor="@color/black"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
+                app:theme="@style/ToolbarColor"
+                app:popupTheme="@style/AppTheme"
+                app:title="Chat"
+                app:titleTextColor="@color/blanco"
+                android:background="@drawable/interfaz_overlay_bajo_invertida"
+                android:minHeight="?attr/actionBarSize" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

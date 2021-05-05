@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.Pericos.ITSVC.App">
+    <!--
+        //////////Linea para hacer que el activity se vaya hacia atras con la flecha del action bar
+    android:parentActivityName="com.yaaa.despues.despues.MainActivity.MainActivity"////////////////////////////////
+    -->
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".NotificacionesOneSignal2"
+        android:allowBackup="true"
+        android:appComponentFactory="someString"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/icono_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:appComponentFactory"
+        tools:targetApi="p">
+        <activity
+            android:name=".Feeds.FeedScrollingActivity"
+            android:label="@string/title_activity_feed_scrolling"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".DashBoard">
+        </activity>
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" /> <!-- Sample AdMob App ID: ca-app-pub-7339146915378942~6904272126 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7339146915378942~6904272126" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".PantallaBienvenida"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DashBoard"
+            android:theme="@style/ToolbarColor" />
+
+        <receiver android:name=".Notificacion" /> <!-- tools:replace="android:appComponentFactory"> -->
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <!--
+<meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        -->
+        <!--  -->
+        <activity
+            android:name=".PantallaMain.Departamentos"
+            android:label="Departamentos"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".PantallaMain.ContactoActivity"
+            android:label="@string/contacto_itsvc"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name="com.thefinestartist.finestwebview.FinestWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@style/FinestWebViewTheme.Light" />
+        <activity
+            android:name=".PantallaMain.OfertaEducativaActivity"
+            android:label="Oferta educativa"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Pericos.ITSVC.App.DashBoard" />
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <!--
+<meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        -->
+        <!-- =================================PERICOS============================================= -->
+        <activity
+            android:name=".Chat.Activity.MenuActivity"
+            android:label="Menu Chat"
+            android:parentActivityName=".PantallaMain.Estudiantes.Estudiantes"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".Chat.Activity.MensajeriaActivitySistemas"
+            android:parentActivityName=".Chat.Activity.MenuActivity"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".Chat.Activity.MensajeriaActivityAlimentarias"
+            android:parentActivityName=".Chat.Activity.MenuActivity"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".Chat.Activity.MensajeriaActivityForestal"
+            android:parentActivityName=".Chat.Activity.MenuActivity"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".Chat.Activity.MensajeriaActivityGeociencias"
+            android:parentActivityName=".Chat.Activity.MenuActivity"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".Chat.Activity.MensajeriaActivityGestion"
+            android:parentActivityName=".Chat.Activity.MenuActivity"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".Chat.Activity.MensajeriaActivityIndividual"
+            android:parentActivityName=".Chat.Activity.MenuActivity"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".Chat.Activity.VerUsuariosActivity"
+            android:parentActivityName=".Chat.Activity.MensajeriaActivitySistemas"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".PantallaMain.Tecnologico.Nosotros"
+            android:theme="@style/ToolbarColorTransparente" />
+        <activity
+            android:name=".PantallaMain.Tecnologico.NvoIngreso"
+            android:label="Nuevo Ingreso"
+            android:parentActivityName=".PantallaMain.Tecnologico.TecnologicoMenu"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".PantallaMain.Tecnologico.MensajeDirector"
+            android:label="Mensaje del Director"
+            android:parentActivityName=".PantallaMain.Tecnologico.TecnologicoMenu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PantallaMain.Tecnologico.Historia"
+            android:label="@string/historia_titulo"
+            android:parentActivityName=".PantallaMain.Tecnologico.TecnologicoMenu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PantallaMain.Estudiantes.Estudiantes"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".PantallaMain.Estudiantes.EstudiantesPerfil"
+            android:parentActivityName=".PantallaMain.Estudiantes.Estudiantes"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".PantallaMain.Tecnologico.TecnologicoMenu"
+            android:label="Tecnologico"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".PantallaMain.Tecnologico.Normatividad"
+            android:label="Normativa"
+            android:parentActivityName=".PantallaMain.Tecnologico.TecnologicoMenu"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".FragmentsOferta.ISIC"
+            android:label="@string/titulo_sistemas"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FragmentsOferta.IIAL"
+            android:label="@string/titulo_sistemas"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FragmentsOferta.IFOR"
+            android:label="@string/titulo_sistemas"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FragmentsOferta.IGEO"
+            android:label="@string/titulo_sistemas"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FragmentsOferta.IGEM"
+            android:label="@string/titulo_sistemas"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Horarios.HorarioPersonalizado"
+            android:label="Horario Perzonalizado"
+            android:parentActivityName=".PantallaMain.Estudiantes.Estudiantes"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".Horarios.DialogoHorario"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name=".Notas.NotasMain"
+            android:parentActivityName=".PantallaMain.Estudiantes.Estudiantes"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".Notas.NotasCompleta"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".PantallaMain.AcercaDeActivity"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".Feeds.FeedMainRecycler"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".Feeds.FeedClickActivity"
+            android:parentActivityName=".Feeds.FeedMainRecycler"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".Chat.Activity.LoginActivity"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".Chat.Activity.RegistroActivity"
+            android:parentActivityName=".Chat.Activity.LoginActivity"
+            android:theme="@style/ToolbarColor" />
+        <activity
+            android:name=".IntroEstudiantes"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name=".Futuro.FeedsTest2"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAGT3_nzTY2_VVgZGapzGFwR6d2lrIu2o0" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service android:name=".Chat.Notificaciones.FirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+
+        </service>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feeds.FeedScrollingActivity">
+    <!--    android:fitsSystemWindows="true"-->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/negroprincipal"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <!--        android:fitsSystemWindows="true"-->
+
+        <com.github.florent37.arclayout.ArcLayout
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:arc_cropDirection="cropOutside"
+            app:arc_height="30dp"
+            app:arc_position="bottom">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/idFeedScrollCompletoFullpictureHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/edificio" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/interfaz_overlay_bajo" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            app:toolbarId="@+id/idFeedCompletoToolbar">
+            <!--     android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/idFeedCompletoToolbar2"-->
+
+            <FrameLayout
+                android:id="@+id/main.framelayout.title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom">
+
+                <LinearLayout
+                    android:id="@+id/main.linearlayout.title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/idFeedScrollCompletoTitulo"
+                        style="@style/UbuntuTema"
+                        android:fontFamily="@font/ubuntu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="9dp"
+                        android:maxLines="4"
+                        android:ellipsize="marquee"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/boton_relleno_blanco_pequeno">
+
+                        <TextView
+                            android:id="@+id/idFeedScrollCompletoCreacion"
+                            style="@style/UbuntuTema"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:padding="5dp"
+                            android:textColor="@color/black"
+                            android:text="@string/fecha_de_creacion"
+                            android:textAlignment="textStart"
+                            android:textSize="10sp" />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/idFeedScrollCompletoToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:background="@drawable/interfaz_overlay_bajo_invertida"
+                android:minHeight="?attr/actionBarSize"
+                app:theme="@style/ToolbarColor">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/idFeedScrollCompletoToolbarTexto"
+                        style="@style/UbuntuTema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="Avisos"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/pericostectitulo" />
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+<!--
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                />
+-->
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.github.florent37.arclayout.ArcLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_feed_scrolling" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        android:visibility="gone"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

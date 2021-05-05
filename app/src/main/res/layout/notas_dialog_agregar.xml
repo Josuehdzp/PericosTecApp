@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialogoAgregarNotas"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/idAgregarLayoutPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/negroprincipal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:src="@drawable/icono_escencial_cuaderno"
+                        android:contentDescription="@string/todo" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/idAgregartxtTitulo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:text="Agregar Titulo de la nota"
+                            android:textColor="@color/blanco" />
+
+                        <EditText
+                            android:id="@+id/idAgregaretTitulo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:hint="Titulo"
+                            android:inputType="textCapSentences"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:textColor="@color/blanco"
+                            android:textColorHint="@color/grisclaro"
+                            tools:ignore="Autofill" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/icono_escencial_nota"
+                    android:contentDescription="@string/todo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idAgregartxtCuerpo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/ubuntu_light"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="Agregar nota"
+                        android:textColor="@color/blanco" />
+                    <EditText
+                        android:id="@+id/idAgregaretCuerpo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:fontFamily="@font/ubuntu_light"
+                        android:hint="Nota"
+                        android:inputType="textCapSentences"
+                        android:maxLines="10"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:textColor="@color/blanco"
+                        android:textColorHint="@color/grisclaro"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/icono_escencial_calendario"
+                    android:contentDescription="@string/todo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idAgregartxtFecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/ubuntu_light"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="Agregar fecha"
+                        android:textColor="@color/blanco" />
+
+                    <EditText
+                        android:id="@+id/idAgregaretFecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:fontFamily="@font/ubuntu_light"
+                        android:hint="Fecha"
+                        android:inputType="date"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:textColor="@color/blanco"
+                        android:textColorHint="@color/grisclaro"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/icono_escencial_reloj"
+                    android:contentDescription="@string/todo" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idAgregartxtHora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/ubuntu_light"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="Agregar hora"
+                        android:textColor="@color/blanco" />
+                    <EditText
+                        android:id="@+id/idAgregaretHora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:focusable="false"
+                        android:inputType="time"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:textColor="@color/blanco"
+                        android:textColorHint="@color/grisclaro"
+                        android:hint="Hora"
+                        android:fontFamily="@font/ubuntu_light"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:src="@drawable/icono_escencial_colores"
+                        tools:ignore="ContentDescription" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/idAgregartxtColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:text="Dale color a tu nota"
+                            android:textColor="@color/blanco"
+                            android:layout_marginStart="10dp" />
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/idCompEditNotasColorContenedor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="12dp"
+                            app:cardBackgroundColor="@color/grisclaro">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/idAgregaretColor"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="12dp"
+                                android:layout_margin="3dp"
+                                app:cardBackgroundColor="@color/grisoscuro"/>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/idAgregartxtColorInvisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:textColor="@color/blanco"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_margin="3dp"
+                    android:padding="6dp">
+
+
+                    <Button
+                        android:id="@+id/idAgregarfabCancelar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/boton_relleno_blanco"
+                        android:backgroundTint="@color/rojo"
+                        android:fontFamily="@font/ubuntu"
+                        style="@style/UbuntuTema"
+                        android:text="Cancelar"
+                        android:textStyle="bold"
+                        tools:ignore="ButtonStyle" />
+
+                    <Button
+                        android:id="@+id/idAgregarfabAceptar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/boton_relleno_blanco"
+                        android:backgroundTint="@color/verde"
+                        android:fontFamily="@font/ubuntu"
+                        style="@style/UbuntuTema"
+                        android:text="Guardar"
+                        android:textStyle="bold"
+                        tools:ignore="ButtonStyle" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

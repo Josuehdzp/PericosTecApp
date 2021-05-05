@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/idLayoutPadreFondoNotas"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/grisclaro"
+        app:cardCornerRadius="7dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/idNotasContenedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/grey"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="7dp"
+            app:contentPadding="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:cardBackgroundColor="@color/grisclaro"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:id="@+id/idNotasImagenColor"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/buttonstyle" />
+
+
+                </androidx.cardview.widget.CardView>
+
+<!--
+                <ImageView
+                    android:id="@+id/idNotasImagenColor"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/buttonstyle" />
+-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/idNotasFecha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:text="Fecha: "
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/blanco"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/idNotasHora"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:text="Hora: "
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/blanco"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/idNotasTitulo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="13dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:text="Titulo: "
+                            android:textColor="@color/blanco"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/idNotasCuerpo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="13dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:singleLine="true"
+                            android:text="Cuerpo: "
+                            android:textColor="@color/blanco" />
+
+                        <TextView
+                            android:id="@+id/idNotasColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:text="Color: "
+                            android:textColor="@color/blanco"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+<!--
+    <androidx.cardview.widget.CardView
+        android:id="@+id/idNotasContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/black_overlay"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/idNotasImagenColor"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/buttonstyle" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/idNotasFecha"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1.5"
+                                android:shadowDy="1.3"
+                                android:shadowRadius="1.6"
+                                android:text="Fecha: "
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/blanco"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/idNotasHora"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1.5"
+                                android:shadowDy="1.3"
+                                android:shadowRadius="1.6"
+                                android:text="Hora: "
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/blanco"
+                                android:textSize="10sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/idNotasTitulo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:shadowColor="@color/black"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.3"
+                                        android:shadowRadius="1.6"
+                                        android:text="Titulo: "
+                                        android:textColor="@color/blanco" />
+
+                                    <TextView
+                                        android:id="@+id/idNotasCuerpo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="13dp"
+                                        android:layout_weight="1"
+                                        android:shadowColor="@color/black"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.3"
+                                        android:shadowRadius="1.6"
+                                        android:text="Cuerpo: "
+                                        android:textColor="@color/blanco" />
+
+                                    <TextView
+                                        android:id="@+id/idNotasColor"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:shadowColor="@color/black"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.3"
+                                        android:shadowRadius="1.6"
+                                        android:text="Color: "
+                                        android:textColor="@color/blanco"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+-->
+</LinearLayout>

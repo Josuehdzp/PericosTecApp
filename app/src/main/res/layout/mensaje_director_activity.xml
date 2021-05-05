@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/gradientbackground">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.github.florent37.diagonallayout.DiagonalLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:diagonal_angle="10"
+                        app:diagonal_direction="left"
+                        app:diagonal_position="bottom">
+
+
+                        <com.flaviofaria.kenburnsview.KenBurnsView
+                            android:id="@+id/idMesjDirecFotoHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/interfaz_overlay_bajo"/>
+                    </com.github.florent37.diagonallayout.DiagonalLayout>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true">
+
+                <FrameLayout
+                    android:id="@+id/idEstudiantesContenedor"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="170dp">
+
+
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:autoSizeMaxTextSize="19sp"
+                                        android:autoSizeMinTextSize="10sp"
+                                        android:autoSizeStepGranularity="2sp"
+                                        android:fontFamily="@font/ubuntu_medium"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.3"
+                                        android:shadowRadius="1.6"
+                                        android:textColor="@color/blanco"
+                                        android:text="@string/mensaje_director_nombre"
+                                        android:textSize="19sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:autoSizeMaxTextSize="15sp"
+                                        android:autoSizeMinTextSize="10sp"
+                                        android:autoSizeStepGranularity="2sp"
+                                        android:fontFamily="@font/ubuntu_medium"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.3"
+                                        android:shadowRadius="1.6"
+                                        android:text="@string/mensaje_director_cargo"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/blanco"
+                                        android:textSize="15sp" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="38dp"
+                                            android:layout_marginStart="90dp"
+                                            android:layout_marginEnd="90dp"
+                                            app:cardBackgroundColor="@color/grisclaro"
+                                            app:cardCornerRadius="8dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center_horizontal"
+                                                android:orientation="vertical">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center_horizontal"
+                                                    android:autoSizeMaxTextSize="14sp"
+                                                    android:autoSizeMinTextSize="10sp"
+                                                    android:autoSizeStepGranularity="2sp"
+                                                    android:fontFamily="@font/ubuntu_medium"
+                                                    android:shadowDx="1.5"
+                                                    android:shadowDy="1.3"
+                                                    android:shadowRadius="1.6"
+                                                    android:textColor="@color/grisoscuro"
+                                                    android:textAlignment="center"
+                                                    android:text="@string/mensaje_director_titulo"
+                                                    android:textSize="14sp" />
+                                            </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="30dp"
+                                            app:cardBackgroundColor="@color/negroprincipal"
+                                            app:cardCornerRadius="8dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:padding="7dp"
+                                                    android:textAlignment="viewStart"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:textAppearance="@style/UbuntuTema"
+                                                    android:textColor="@color/blanco"
+                                                    android:textSize="14sp"
+                                                    android:text="@string/mensaje_director_txt_1"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:padding="7dp"
+                                                    android:textAlignment="viewStart"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:textAppearance="@style/UbuntuTema"
+                                                    android:textColor="@color/blanco"
+                                                    android:textSize="14sp"
+                                                    android:text="@string/mensaje_director_txt_2"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:padding="7dp"
+                                                    android:textAlignment="viewStart"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:textAppearance="@style/UbuntuTema"
+                                                    android:textColor="@color/blanco"
+                                                    android:textSize="14sp"
+                                                    android:text="@string/mensaje_director_txt_3"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:padding="7dp"
+                                                    android:textAlignment="viewStart"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:textAppearance="@style/UbuntuTema"
+                                                    android:textColor="@color/blanco"
+                                                    android:textSize="14sp"
+                                                    android:text="@string/mensaje_director_txt_4"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:padding="7dp"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:textAlignment="viewStart"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:textAppearance="@style/UbuntuTema"
+                                                    android:textColor="@color/blanco"
+                                                    android:textSize="14sp"
+                                                    android:text="@string/mensaje_director_txt_5"/>
+                                            </LinearLayout>
+
+
+                                        </androidx.cardview.widget.CardView>
+
+                                    </RelativeLayout>
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="20dp"
+                                        android:layout_margin="5dp"
+                                        android:layout_gravity="bottom">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:src="@drawable/logo_sep_2019"/>
+
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:src="@drawable/icono_itsvc_blanco"/>
+                                        </LinearLayout>
+
+                                    </FrameLayout>
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                </FrameLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/idMsjDirectFotoDirecMargin"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="117dp"
+                    android:src="@color/blanco" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/idMsjDirectFotoDirec"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="120dp"/>
+
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/idMesjDirecToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/interfaz_overlay_bajo_invertida"
+                android:minHeight="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme"
+                app:theme="@style/ToolbarColor">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/idMesjDirecToolbarTexto"
+                        style="@style/UbuntuTema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/mensaje_director_titulo"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="5dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/pericostectitulo" />
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

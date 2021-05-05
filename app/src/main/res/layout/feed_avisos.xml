@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/negroprincipal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/idAvisosCardContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/idAvisosLinearPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp">
+
+                <com.flaviofaria.kenburnsview.KenBurnsView
+                    android:id="@+id/idAvisosImagenFull"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edificio_2"
+                    android:scaleType="centerCrop"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/interfaz_overlay_bajo">
+
+                    <TextView
+                        android:id="@+id/idAvisosFecha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:autoSizeMaxTextSize="10sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:textSize="10sp"
+                        android:autoLink="all"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:textColor="@color/blanco"
+                        android:fontFamily="@font/ubuntu_light"
+                        android:textStyle="bold"
+                        android:text="Fecha"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/idAvisosMensaje"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoSizeMaxTextSize="13sp"
+                            android:autoSizeMinTextSize="9sp"
+                            android:autoSizeStepGranularity="2sp"
+                            android:textSize="13sp"
+                            android:autoLink="all"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:textColor="@color/blanco"
+                            android:fontFamily="@font/ubuntu"
+                            android:text="@string/title_activity_contacto"
+                            android:ellipsize="marquee"
+                            android:maxLines="2"/>
+
+                        <TextView
+                            android:id="@+id/idAvisosDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoSizeMaxTextSize="13sp"
+                            android:autoSizeMinTextSize="9sp"
+                            android:autoSizeStepGranularity="2sp"
+                            android:textSize="13sp"
+                            android:autoLink="all"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:textColor="@color/blanco"
+                            android:fontFamily="@font/ubuntu"
+                            android:text="@string/title_activity_contacto"
+                            android:ellipsize="marquee"
+                            android:maxLines="2"/>
+
+
+                        <TextView
+                            android:id="@+id/idAvisosLink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/idAvisosEstado"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:autoSizeMaxTextSize="10sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:textSize="10sp"
+                                android:autoLink="all"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1.5"
+                                android:shadowDy="1.3"
+                                android:shadowRadius="1.6"
+                                android:textColor="@color/blanco"
+                                android:fontFamily="@font/ubuntu_light"
+                                android:text="Estado"/>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/blanco"/>
+                            <TextView
+                                android:id="@+id/idAvisosHistoria"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:singleLine="true"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:scrollHorizontally="true"
+                                android:autoSizeMaxTextSize="10sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:textSize="10sp"
+                                android:autoLink="all"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1.5"
+                                android:shadowDy="1.3"
+                                android:shadowRadius="1.6"
+                                android:textColor="@color/blanco"
+                                android:fontFamily="@font/ubuntu_light"
+                                android:text="Historia"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

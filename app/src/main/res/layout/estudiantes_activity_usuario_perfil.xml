@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negroprincipal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:id="@+id/idContenedor1"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.github.florent37.arclayout.ArcLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="5dp"
+                        app:arc_cropDirection="cropOutside"
+                        app:arc_height="35dp"
+                        app:arc_position="bottom">
+
+                        <com.flaviofaria.kenburnsview.KenBurnsView
+                            android:id="@+id/idPerfilEstudiantesFotoHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/edificio" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/interfaz_overlay_perfil" />
+                    </com.github.florent37.arclayout.ArcLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/idPerfilEstudiantesFotoUsuarioCircle"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="32.5dp"
+                    android:layout_marginTop="52dp"
+                    android:src="@drawable/perfilpericodefault"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorAccent"/>
+
+            <LinearLayout
+                android:id="@+id/contenedor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:id="@+id/idPerfilEstudiantesNombreUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cargando..."
+                    android:layout_margin="3dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    style="@style/UbuntuTema"
+                    android:textSize="22sp" />
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/boton_relleno_blanco">
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/boton_orillas_blanco">
+
+                        <TextView
+                            android:id="@+id/idPerfilEstudiantesCarreraUsuario"
+                            style="@style/UbuntuTema"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="Cargando..." />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/boton_relleno_blanco">
+
+                        <ImageView
+                            android:id="@+id/idPerfilEstudiantesIconoCarreraUsuario"
+                            android:layout_width="65dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:padding="2dp"
+                            android:background="@drawable/boton_relleno_blanco"
+                            android:layout_marginBottom="4dp"
+                            android:src="@drawable/itsvclogo"
+                            android:contentDescription="@string/todo" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/UbuntuTema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_gravity="center"
+                        android:text="Tu Matricula:"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/boton_orillas_blanco">
+
+                        <TextView
+                            android:id="@+id/idPerfilEstudiantesMatriculaUsuario"
+                            style="@style/UbuntuTema"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="Cargando..." />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/UbuntuTema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_gravity="center"
+                        android:text="Tu Correo:"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/boton_orillas_blanco">
+
+                        <TextView
+                            android:id="@+id/idPerfilEstudiantesCorreoUsuario"
+                            style="@style/UbuntuTema"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="Cargando...">
+
+                        </TextView>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/idContenedor1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:id="@+id/idEstudiantesFotoUsuarioCancelar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="@color/rojo_bajo"
+                        android:background="@drawable/boton_orillas_blanco"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/UbuntuTema"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_centerInParent="true"
+                            android:text="Cancelar"
+                            android:textStyle="bold"
+                            android:textColor="@color/rojo_bajo">
+
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/idPerfilEstudiantesFotoUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/boton_orillas_blanco"
+                        android:backgroundTint="@color/azulnotas">
+
+                        <TextView
+                            style="@style/UbuntuTema"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="Cambiar foto de perfil"
+                            android:textColor="@color/azulnotas"
+                            android:textStyle="bold">
+
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/idEstudiantesFotoUsuarioAceptar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="@color/verdeicono"
+                        android:background="@drawable/boton_orillas_blanco"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/UbuntuTema"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_centerInParent="true"
+                            android:text="Aceptar"
+                            android:textStyle="bold"
+                            android:textColor="@color/verdeicono">
+
+                        </TextView>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/idPerfilEstudiantescardCerrarSesion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/boton_relleno_blanco"
+                    android:backgroundTint="@color/rojo_bajo">
+
+                    <TextView
+                        style="@style/UbuntuTema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Cerrar sesión"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/idPerfilEstudiantesToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:theme="@style/ToolbarColor"
+                app:popupTheme="@style/AppTheme"
+                android:background="@drawable/interfaz_overlay_bajo_invertida"
+                android:minHeight="?attr/actionBarSize" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/idPerfilEstudiantesToolbarTexto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        style="@style/UbuntuTema"
+                        android:layout_gravity="center_vertical"
+                        android:text="Perfil"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/pericostectitulo"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

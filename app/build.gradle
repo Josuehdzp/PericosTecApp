@@ -1,0 +1,104 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.7'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.Pericos.ITSVC.App"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "Pericos v1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                onesignal_app_id               : '47eb07c7-6650-4581-b709-f9e55c624d9b',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.3.0-alpha02'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-alpha02'
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+///Json
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+///Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-analytics:17.4.0'
+    implementation 'com.google.firebase:firebase-core:17.4.0'
+    implementation 'com.google.firebase:firebase-database:19.3.0' //Base de Datos
+    implementation 'com.google.firebase:firebase-storage:19.1.1'  //Base de Archivos
+    implementation 'com.google.firebase:firebase-auth:19.3.1'  //Autenticacion de firebase
+    implementation 'com.firebaseui:firebase-ui-database:5.0.0'
+    //FirebaseUI for Firebase Realtime Database
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+    implementation 'com.google.firebase:firebase-ads:19.1.0' //Ads (AdMob)
+
+    //OneSignal (Notificaciones)
+    implementation 'com.onesignal:OneSignal:3.13.2'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+    //Agregados
+    implementation 'de.hdodenhof:circleimageview:2.2.0' //Imagen Circular
+    implementation 'com.kbeanie:multipicker:1.5' // Multilibreria
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final' //Ayuda a ver la hora bonito
+    implementation 'com.makeramen:roundedimageview:2.3.0' //Imagenes circulares
+    implementation 'com.github.yukuku:ambilwarna:2.0.1' //Color picker
+    implementation 'com.github.smarteist:autoimageslider:1.3.2' //Slider con animaciones
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0' //Visor de imagenes
+    implementation 'com.github.danimahardhika:cafebar:1.3.2' // Snackbar perzonalizados
+    implementation 'com.github.florent37:arclayout:1.0.5' //ArcLayout
+    implementation 'com.github.florent37:diagonallayout:1.1.1' //DiagonalLayout
+    implementation 'com.flaviofaria:kenburnsview:1.0.7' //KenBurnsView animaciones en imagenview
+    implementation 'com.thefinestartist:finestwebview:1.2.7' //FinestWebView WebView bonito
+    implementation 'com.wang.avi:library:2.1.3' //AVLoadingIndicatorView
+    implementation 'io.github.dreierf:material-intro-screen:0.0.6'  //Android Material Intro Screen
+
+}
+apply plugin: 'com.google.gms.google-services'

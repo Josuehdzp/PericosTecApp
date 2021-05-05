@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/idNvoIngresoToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/interfaz_overlay_bajo_invertida"
+                android:minHeight="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme"
+                app:theme="@style/ToolbarColor">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/idNvoIngresoToolbarTexto"
+                        style="@style/UbuntuTema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="Nuevo Ingreso"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="5dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/pericostectitulo" />
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgPrimera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:riv_corner_radius="7dp"
+                android:padding="7dp"
+                android:scaleType="centerInside"
+                android:onClick="NvoIngresoCarreras"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardBackgroundColor="@color/azulnotas"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        style="@style/UbuntuTema"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:text="@string/Nvo_ingreso1"
+                        android:textColor="@color/blanquillo"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/negroprincipal"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        style="@style/UbuntuTema"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:text="@string/Nvo_ingreso2"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardBackgroundColor="@color/verde"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        style="@style/UbuntuTema"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:text="@string/Nvo_ingreso3"
+                        android:textColor="@color/blanquillo"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/negroprincipal"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idNvoIngresoTexto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        style="@style/UbuntuTema"
+                        android:autoLink="all"
+                        android:textIsSelectable="true"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:text="@string/Nvo_ingreso4"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/inscripLogo"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="3dp"
+                                android:src="@drawable/pericocontituloyfondo2sombra"
+                                android:scaleType="centerInside" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                style="@style/UbuntuTema"
+                                android:textAlignment="textStart"
+                                android:textSize="15sp"
+                                android:textColor="@color/blanco"
+                                android:text="@string/Req7" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/UbuntuTema"
+                                android:textColor="@color/blanco"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:layout_margin="5dp"
+                                android:text="@string/Req13"/>
+
+                            <RelativeLayout
+                                android:id="@+id/idNvoIngresoBtnSolicitarFicha"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/boton_relleno_blanco"
+                                android:backgroundTint="@color/rojo_bajo">
+
+                                <TextView
+                                    style="@style/UbuntuTema"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="@string/Req14"
+                                    android:textStyle="bold">
+
+                                </TextView>
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/naranjaprincipal"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        style="@style/UbuntuTema"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:text="@string/Req"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        style="@style/UbuntuTema"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:text="@string/Req1"
+                        android:textColor="@color/grisoscuro"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/negroprincipal"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/flechaalimentarias" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/UbuntuTema"
+                            android:textSize="15sp"
+                            android:textColor="@color/blanco"
+                            android:text="@string/Req2"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/flechaalimentarias" />
+
+                        <TextView
+                            android:id="@+id/textViewReq31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/UbuntuTema"
+                            android:textSize="15sp"
+                            android:textColor="@color/blanco"
+                            android:text="@string/Req3"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/flechaalimentarias" />
+
+                        <TextView
+                            android:id="@+id/textViewReq3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/UbuntuTema"
+                            android:textSize="15sp"
+                            android:textColor="@color/blanco"
+                            android:text="@string/Req4"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/flechaalimentarias" />
+
+                        <TextView
+                            android:id="@+id/textViewReq4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/UbuntuTema"
+                            android:textSize="15sp"
+                            android:textColor="@color/blanco"
+                            android:text="@string/Req5"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/flechaalimentarias" />
+
+                        <TextView
+                            android:id="@+id/textViewReq5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/UbuntuTema"
+                            android:textSize="15sp"
+                            android:textColor="@color/blanco"
+                            android:text="@string/Req8"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/flechaalimentarias" />
+
+                        <TextView
+                            android:id="@+id/textViewReq6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/UbuntuTema"
+                            android:textSize="15sp"
+                            android:textColor="@color/blanco"
+                            android:text="@string/Req7"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/flechaalimentarias" />
+
+                        <TextView
+                            android:id="@+id/textViewReq7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/UbuntuTema"
+                            android:textSize="15sp"
+                            android:textColor="@color/blanco"
+                            android:text="@string/Req6"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/flechaalimentarias" />
+
+                        <TextView
+                            android:id="@+id/textViewReq8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/UbuntuTema"
+                            android:textSize="15sp"
+                            android:textColor="@color/blanco"
+                            android:text="@string/Req10"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/flechaalimentarias" />
+
+                        <TextView
+                            android:id="@+id/textViewReq9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/UbuntuTema"
+                            android:textSize="15sp"
+                            android:textColor="@color/blanco"
+                            android:text="@string/Req9"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/negroprincipal"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/boton_relleno_blanco"
+                        android:backgroundTint="@color/colorPrimaryDark">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="4dp"
+                            android:layout_centerInParent="true"
+                            android:textAlignment="center"
+                            style="@style/UbuntuTema"
+                            android:text="¡Estamos entregando fichas!"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/idNvoIngresoImagenIsic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:padding="2dp"
+                            android:adjustViewBounds="true"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:onClick="NvoIngresoCarreras"
+                            android:focusable="true" />
+
+                        <ImageView
+                            android:id="@+id/idNvoIngresoImagenIial"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:padding="2dp"
+                            android:adjustViewBounds="true"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:onClick="NvoIngresoCarreras"
+                            android:focusable="true" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/idNvoIngresoImagenIfor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:padding="2dp"
+                            android:adjustViewBounds="true"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:onClick="NvoIngresoCarreras"
+                            android:focusable="true" />
+
+                        <ImageView
+                            android:id="@+id/idNvoIngresoImagenIgeo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:padding="2dp"
+                            android:adjustViewBounds="true"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:onClick="NvoIngresoCarreras"
+                            android:focusable="true" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/idNvoIngresoImagenIgem"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_margin="3dp"
+                            android:padding="2dp"
+                            android:adjustViewBounds="true"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:onClick="NvoIngresoCarreras"
+                            android:focusable="true" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/segTEXTO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/negroprincipal"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/idNvoIngresoBtnIsic"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:layout_marginEnd="5dp"
+                            android:elevation="5dp"
+                            android:onClick="Carreras"
+                            app:cardBackgroundColor="@color/negroprincipal"
+                            app:cardCornerRadius="7dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+
+
+                                    <ImageView
+                                        android:id="@+id/idNvoIngresoImgIsic"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/isic_icon_blanco" />
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@drawable/interfaz_overlay_bajo">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="18dp"
+                                            android:layout_gravity="bottom"
+                                            style="@style/UbuntuTema"
+                                            android:text="Ing. Sistemas"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/blanco"
+                                            android:textSize="8sp"
+                                            app:autoSizeTextType="uniform" />
+                                    </FrameLayout>
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/idNvoIngresoBtnIial"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:layout_marginEnd="5dp"
+                            android:elevation="5dp"
+                            android:onClick="Carreras"
+                            app:cardBackgroundColor="@color/negroprincipal"
+                            app:cardCornerRadius="7dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+
+
+                                    <ImageView
+                                        android:id="@+id/idNvoIngresoImgIial"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/icono_iial_blanco" />
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@drawable/interfaz_overlay_bajo">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="18dp"
+                                            android:layout_gravity="bottom"
+                                            style="@style/UbuntuTema"
+                                            android:text="Ing. Alimentarias"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/blanco"
+                                            android:textSize="8sp"
+                                            app:autoSizeTextType="uniform" />
+
+                                    </FrameLayout>
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/idNvoIngresoBtnIfor"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:layout_marginEnd="5dp"
+                            android:elevation="5dp"
+                            android:onClick="Carreras"
+                            app:cardBackgroundColor="@color/negroprincipal"
+                            app:cardCornerRadius="7dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+
+
+                                    <ImageView
+                                        android:id="@+id/idNvoIngresoImgIfor"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/icon_ifor_blanco" />
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@drawable/interfaz_overlay_bajo">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="18dp"
+                                            android:layout_gravity="bottom"
+                                            style="@style/UbuntuTema"
+                                            android:text="Ing. Forestal"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/blanco"
+                                            android:textSize="8sp"
+                                            app:autoSizeTextType="uniform" />
+                                    </FrameLayout>
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/idNvoIngresoBtnIgeo"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:layout_marginEnd="5dp"
+                            android:elevation="5dp"
+                            android:onClick="Carreras"
+                            app:cardBackgroundColor="@color/negroprincipal"
+                            app:cardCornerRadius="7dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+
+
+                                    <ImageView
+                                        android:id="@+id/idNvoIngresoImgIgeo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/icon_igeo_blanco" />
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@drawable/interfaz_overlay_bajo">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="18dp"
+                                            android:layout_gravity="bottom"
+                                            style="@style/UbuntuTema"
+                                            android:text="Ing. Geociencias"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/blanco"
+                                            android:textSize="8sp"
+                                            app:autoSizeTextType="uniform" />
+
+                                    </FrameLayout>
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/idNvoIngresoBtnIgem"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:layout_marginEnd="5dp"
+                            android:elevation="5dp"
+                            android:onClick="Carreras"
+                            app:cardBackgroundColor="@color/negroprincipal"
+                            app:cardCornerRadius="7dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/idNvoIngresoImgIgem"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/icon_igem_blanco" />
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@drawable/interfaz_overlay_bajo">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="18dp"
+                                            android:layout_gravity="bottom"
+                                            style="@style/UbuntuTema"
+                                            android:text="Ing. Gestion"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/blanco"
+                                            android:textSize="8sp"
+                                            app:autoSizeTextType="uniform" />
+                                    </FrameLayout>
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/flechaalimentarias" />
+
+                        <TextView
+                            android:id="@+id/textVieProm1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/UbuntuTema"
+                            android:textSize="15sp"
+                            android:textColor="@color/blanco"
+                            android:text="@string/Prom2"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/flechaalimentarias" />
+
+                        <TextView
+                            android:id="@+id/textViewProm2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/UbuntuTema"
+                            android:textSize="15sp"
+                            android:textColor="@color/blanco"
+                            android:text="@string/Prom3"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/flechaalimentarias" />
+
+                        <TextView
+                            android:id="@+id/textViewProm3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/UbuntuTema"
+                            android:textSize="15sp"
+                            android:textColor="@color/blanco"
+                            android:text="@string/Prom4"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/flechaalimentarias" />
+
+                        <TextView
+                            android:id="@+id/textViewProm4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/UbuntuTema"
+                            android:textSize="15sp"
+                            android:textColor="@color/blanco"
+                            android:text="@string/Prom1"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/logo_sep_2019" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/icono_itsvc_blanco" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>

@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradientbackground"
+    android:orientation="vertical"
+    tools:context=".PantallaMain.ContactoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.flaviofaria.kenburnsview.KenBurnsView
+                        android:id="@+id/idContactoFotoHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@drawable/interfaz_overlay_bajo" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true">
+
+                <FrameLayout
+                    android:id="@+id/idEstudiantesContenedor"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="170dp">
+
+
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/negroprincipal"
+                            app:cardCornerRadius="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="70dp"
+                                        android:layout_height="25dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginEnd="30dp"
+                                        android:layout_gravity="right"
+                                        android:src="@drawable/icono_itsvc_nice"/>
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="25dp"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:autoSizeMaxTextSize="16sp"
+                                        android:autoSizeMinTextSize="10sp"
+                                        android:autoSizeStepGranularity="2sp"
+                                        android:shadowColor="@color/black"
+                                        android:fontFamily="@font/ubuntu_medium"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.3"
+                                        android:textColor="@color/blanco"
+                                        android:shadowRadius="1.6"
+                                        android:textAlignment="center"
+                                        android:text="@string/itsvc_titulo"
+                                        android:textSize="16sp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="3dp"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:background="@drawable/boton_relleno_blanco" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_margin="3dp"
+                                        style="@style/UbuntuTema"
+                                        android:fontFamily="@font/ubuntu"
+                                        android:textAlignment="center"
+                                        android:text="Contactanos"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="4dp"
+                                        android:gravity="center_vertical"
+                                        android:background="@drawable/boton_orillas_blanco"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_marginStart="4dp"
+                                            android:src="@drawable/icono_escencial_reloj"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="10dp"
+                                                style="@style/UbuntuTema"
+                                                android:fontFamily="@font/ubuntu"
+                                                android:textStyle="bold"
+                                                android:text="Horario de atención:"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="10dp"
+                                                android:autoSizeMaxTextSize="12sp"
+                                                android:autoSizeMinTextSize="10sp"
+                                                android:autoSizeStepGranularity="2sp"
+                                                android:fontFamily="@font/ubuntu_light"
+                                                android:shadowColor="@color/black"
+                                                android:shadowDx="1.5"
+                                                android:shadowDy="1.3"
+                                                android:shadowRadius="1.6"
+                                                android:text="09:00 A.M. - 06:00 P.M."
+                                                android:textColor="@color/blanco"
+                                                android:textSize="14sp" />
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="4dp"
+                                        android:gravity="center_vertical"
+                                        android:background="@drawable/boton_orillas_blanco"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_marginStart="4dp"
+                                            android:src="@drawable/icono_escencial_internet"/>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                style="@style/UbuntuTema"
+                                                android:text="Pagina:"
+                                                android:fontFamily="@font/ubuntu"
+                                                android:textStyle="bold"
+                                                android:textSize="14sp" />
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:autoLink="web"
+                                                style="@style/UbuntuTema"
+                                                android:text="https://www.itsvc.edu.mx"
+                                                android:textSize="14sp" />
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="4dp"
+                                        android:gravity="center_vertical"
+                                        android:background="@drawable/boton_orillas_blanco"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_marginStart="4dp"
+                                            android:src="@drawable/icono_escencial_correo1"/>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                style="@style/UbuntuTema"
+                                                android:text="Correo:"
+                                                android:textStyle="bold"
+                                                android:fontFamily="@font/ubuntu"
+                                                android:textSize="14sp" />
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:autoLink="email"
+                                                style="@style/UbuntuTema"
+                                                android:text="difusion@itsvc.edu.mx"
+                                                android:textSize="14sp" />
+                                        </LinearLayout>
+
+                                        </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="4dp"
+                                        android:gravity="center_vertical"
+                                        android:background="@drawable/boton_orillas_blanco"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_marginStart="4dp"
+                                            android:src="@drawable/facebook_messenger_icon"/>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                style="@style/UbuntuTema"
+                                                android:text="Messenger:"
+                                                android:textStyle="bold"
+                                                android:fontFamily="@font/ubuntu"
+                                                android:textSize="14sp" />
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:autoLink="all"
+                                                style="@style/UbuntuTema"
+                                                android:text="m.me/TECNMcampusVenustianoCarranza"
+                                                android:textSize="14sp" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="4dp"
+                                        android:gravity="center_vertical"
+                                        android:background="@drawable/boton_orillas_blanco"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_marginStart="4dp"
+                                            android:src="@drawable/icono_escencial_smartphone"/>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                style="@style/UbuntuTema"
+                                                android:text="Numero(s):"
+                                                android:fontFamily="@font/ubuntu"
+                                                android:textStyle="bold"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:autoLink="phone"
+                                                style="@style/UbuntuTema"
+                                                android:text="01 (746) 843 57 53"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/idEstudiantesCorreoUsuario"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:autoLink="phone"
+                                                style="@style/UbuntuTema"
+                                                android:text="01 (746) 843 66 28"
+                                                android:textSize="14sp" />
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="4dp"
+                                        android:gravity="center_vertical"
+                                        android:background="@drawable/boton_orillas_blanco"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_marginStart="4dp"
+                                            android:src="@drawable/icono_escencial_ubicacion1"/>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                style="@style/UbuntuTema"
+                                                android:text="Dirección:"
+                                                android:fontFamily="@font/ubuntu"
+                                                android:textStyle="bold"
+                                                android:textSize="14sp" />
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:autoLink="map"
+                                                style="@style/UbuntuTema"
+                                                android:text="@string/direcciontec"
+                                                android:textSize="14sp" />
+                                        </LinearLayout>
+                                        </LinearLayout>
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:background="@color/blanco" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="3dp"
+                                        style="@style/UbuntuTema"
+                                        android:textStyle="bold"
+                                        android:text="Siguenos en nuestras Redes sociales:"
+                                        android:textColor="@color/blanco"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="center_horizontal"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/idContactoBtnFacebook"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_marginEnd="15dp"
+                                            android:src="@drawable/facebook"/>
+
+                                        <ImageView
+                                            android:id="@+id/idContactoBtnFacebookMessenger"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_marginEnd="15dp"
+                                            android:src="@drawable/facebook_messenger_icon"/>
+
+                                        <ImageView
+                                            android:id="@+id/idContactoBtnTwitter"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_marginEnd="15dp"
+                                            android:src="@drawable/twitter"/>
+
+                                        <ImageView
+                                            android:id="@+id/idContactoBtnYoutube"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_marginEnd="15dp"
+                                            android:src="@drawable/youtube"/>
+
+                                        <ImageView
+                                            android:id="@+id/idContactoBtnInstagram"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_marginEnd="15dp"
+                                            android:src="@drawable/instagram_logo"/>
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:background="@color/blanco" />
+
+                                    <com.google.android.gms.maps.MapView
+                                        android:id="@+id/idContactoMapView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="366dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="10dp" />
+
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+                </FrameLayout>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/idContactoFoto"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignStart="@id/idEstudiantesContenedor"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="130dp"
+                    app:riv_corner_radius="30dp"
+                    android:src="@color/grisclaro" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/idContactoFoto2"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_alignStart="@id/idEstudiantesContenedor"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="131dp"
+                    app:riv_corner_radius="10dp"/>
+
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/idContactoToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/interfaz_overlay_bajo_invertida"
+                android:minHeight="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme"
+                app:theme="@style/ToolbarColor">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/idContactoToolbarTexto"
+                        style="@style/UbuntuTema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/contacto"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="5dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/pericostectitulo" />
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_sep_2019" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/icono_itsvc_blanco" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

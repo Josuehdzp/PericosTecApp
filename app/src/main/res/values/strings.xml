@@ -1,0 +1,1203 @@
+<resources>
+    <string name="facebook_app_id">186337808943824</string>
+    <string name="fb_login_protocol_scheme">fb186337808943824</string>
+
+    <string name="inicio">Inicio</string>
+    <string name="app_name">Pericos Tec</string>
+    <string name="noticias">Noticias</string>
+    <string name="contacto">Contacto</string>
+    <string name="ofertaeducativa">Oferta Educativa</string>
+    <string name="vinculacion">Vinculación</string>
+    <string name="todo">TODO</string>
+    <string name="tecnologico">Tecnológico</string>
+    <string name="horarios">Horarios</string>
+    <string name="estudiantes">Estudiantes</string>
+    <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="Page1Title" />
+    <string name="Page2Title" />
+    <string name="Page3Title" />
+    <string name="Page4Title" />
+    <string name="Page5Title" />
+    <string name="Page6Title" />
+    <string name="Page7Title" />
+    <string name="Page1Message" />
+    <string name="Page2Message" />
+    <string name="Page3Message" />
+    <string name="Page4Message" />
+    <string name="Page5Message" />
+    <string name="Page6Message" />
+    <string name="Page7Message" />
+    <string name="textview">TextView</string>
+
+
+    <string name="title_activity_fullscreen">Panteras ITSH</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="panteras">Panteras</string>
+    <string name="contacto_itsvc">Contacto ITSVC</string>
+    <string name="boletines">Boletines ITSH</string>
+
+    <string name="verde">Verde</string>
+    <string name="title_activity_login">Iniciar Sesion</string>
+    <string name="title_activity_contacto">ContactoActivity</string>
+    <string name="Isa">TextView</string>
+    <string name="contactanos">Contactanos</string>
+
+    <string name="portal_web">Portal web</string>
+    <string name="title_activity_actionbar">Si es esta</string>
+    <string name="opciones">Opciones</string>
+    <string name="configuraciones_action">configuraciones action</string>
+    <string name="avisos">Avisos</string>
+    <string name="numero_de_control">Numero de control</string>
+    <string name="clave_de_acceso">Clave de acceso</string>
+    <string name="entrar">Entrar</string>
+    <string name="title_activity_aspirantestab">AspirantestabActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="requisitos">Requisitos</string>
+    <string name="modalidad_de_estudios">Modalidad</string>
+    <string name="telefono">Telefono</string>
+    <string name="guardar">Guardar</string>
+    <string name="oferta_educativa">Oferta educativa</string>
+
+
+    <!--descripciones.-->
+
+    <string name="title_activity_scrolling_requisitos">ScrollingRequisitosActivity</string>
+    <string name="descripcion_requisitos_parte1">"Consula la convocatoria para examen de admisión Agosto-Diciembre 2019."</string>
+
+    <string name="descripcion_requisitos_parte2">
+        "Los requisitos para la ficha del examen de admisión son:"
+    </string>
+
+    <string name="descripcion_requisitos_parte3">
+        "• Certificado de bachillerato (copia) o constancia de estudios de Nivel Medio Superior que indique\n"
+        "que se está cursando el sexto semestre(original y copia)\n"
+        "• Acta de nacimiento (copia)\n"
+        "• CURP (copia)\n"
+    </string>
+
+    <string name="descripcion_requisitos_parte4">
+        "• 3 fotografías tamaño infantil (recientes)\n"
+        "• Recibo de pago por concepto de ficha para examen de admisión $360.00 M.N.\n"
+        "(Seguir el procedimiento de pago, da click en el siguiente vinculo)\n"
+    </string>
+
+    <string name="descripcion_requisitos_parte5">
+        "Descarga, imprime y llena la "Solicitud de Ficha para examen de admisión" (opcional a fin de"
+        "agilizar el trámite, de lo contrario llenarlo al momento de acudir al Departamento de Control"
+        "Escolar en el Instituto)."
+    </string>
+
+
+    <string name="descripcion_requisitos_parte6">
+"7 Bachilleratos de la región tienen PASE AUTOMÁTICO al Tecnológico, es decir sin realizar examen"
+" de admisión, lo anterior autorizado por nuestra Junta de Gobierno y fundamentado en la"
+" cantidad de alumnos que nos aportan año con año. Los Bachilleratos son:"
+    </string>
+
+    <string name="descripcion_requisitos_parte7">
+        "• CBTis 86 de Huauchinango\n"
+        "• Colegio de Bachilleres de Huauchinango\n"
+        "• Preparatoria Albert Einstein de Necaxa\n"
+        "• Preparatoria Benito Juárez de Huauchinango\n"
+    </string>
+    <string name="descripcion_requisitos_parte8">
+        "• Colegio de Bachilleres de Xicotepec\n"
+        "• Centro Escolar de Huauchinango\n"
+        "• Y Conalep Huauchinango\n\n"
+        "• Para aplicar el pase automático deben tener promedio mínimo de 8 y realizar el trámite para examen de admisión."
+
+    </string>
+
+    <!--  -->
+    <string name="descripcion_requisitos_parte9">
+    "El Centro Nacional de Evaluación para la Educación Superior, A.C. (CENEVAL) ha puesto a disposición"
+    " la guía interactiva que tiene como finalidad fortalecer la preparación para el Examen, en donde"
+    " podrá consultar la estructura del mismo, los contenidos a evaluar, los tipos de reactivos que"
+    " verán en él y lo que debe hacer antes del día del examen, además de un Ejercicio de entrenamiento"
+    " del Examen de Admisión y al término de la misma, les brinda un resultado inclusive, esto a fin de"
+    " que los aspirantes puedan descargarla en sus computadores y trabajar con ella en la siguiente liga:"
+    </string>
+
+
+    <string name="descripcion_requisitos_parte10">
+    "En el siguiente enlace puedes descargar la guía de estudio para el examen de admisión.\n\n\n"
+
+</string>
+
+    <string name="descripcion_requisitos_parte11">
+        "El CENEVAL ha puesto a disposición la liga para descargar la Guía de EXANI (Examen Nacional de"
+        " Ingreso a la Educación Superior, 23a. Edición 2018) en la siguiente dirección:"
+    </string>
+    <string name="descripcion_requisitos_parte12">
+        "Después de este primer proceso, se darán indicaciones para la inscripción, se van a requerir más"
+        " documentos y pagos por concepto de: INSCRIPCIÓN $1,440.00, CURSO PROPEDEUTICO $185.00 y $80.00"
+        " por tu CREDENCIAL ESCOLAR; checa tu promedio para aplicar a los siguientes descuentos:"
+    </string>
+    <string name="descripcion_requisitos_parte13">
+        "• Promedio de 8.5 a 8.9: 25% de descuento en inscripción.\n"
+        "• Promedio de 9.0 a 9.4: 50% de descuento en inscripción.\n"
+        "• Promedio de 9.5 a 10.0: 100% de descuento en inscripción.\n"
+    </string>
+
+
+    <string name="descarga_aqui_tu_solicitud_de_ficha_para_examen_de_admisi_n">DESCARGA AQUI TU SOLICITUD DE FICHA PARA EXAMEN DE ADMISIÓN.</string>
+    <string name="marcacion">Mayor información al 776 76 2 60 33.</string>
+    <string name="si_ya_presentaste_examen_de_admisi_n_da_clic_aqui_y_revisa_los_requisitos_de_inscripci_n">SI YA PRESENTASTE EXAMEN DE ADMISIÓN, DA CLIC AQUI Y REVISA LOS REQUISITOS DE INSCRIPCIÓN.</string>
+    <string name="_7767626033">7767626033</string>
+    <string name="mayor_informaci_n_al">Mayor información al:</string>
+    <string name="preguntas_frecuentes_para_nuevo_ingreso">Preguntas frecuentes para nuevo ingreso</string>
+    <string name="procedimiento_para_generar_orden_de_cobro">Procedimiento para generar orden de cobro</string>
+
+    <!--////////////////////////////////////////////////////////////////////////-->
+    <string name="descripcionmodalidaddeestudios">
+        "En el Tec Huauchinango contamos con dos modalidades de estudio para que puedas terminar"
+        una carrera profesional aún si estás trabajando."
+    </string>
+
+    <string name="descripcionmodalidaddeestudios2">
+        "Sistema escolarizado de Lunes a Viernes:
+    </string>
+
+    <string name="descripcionmodalidaddeestudios3">
+        "• Ingeniería Eléctrica.\n"
+        "• Ingeniería Industrial.\n"
+        "• Ingeniería en Sistemas Computacionales.\n"
+        "• Ingeniería Informática.\n"
+        "• Ingeniería Mecatrónica.\n"
+        "• Ingeniería en Administración."
+    </string>
+
+    <string name="descripcionmodalidaddeestudios4">
+        "  Educación a distancia, modalidad semipresencial:\n"
+        "  (Sábados de 7:00 a 16:00 hrs.)\n\n"
+    </string>
+
+    <string name="descripcionmodalidaddeestudios5">
+
+        "• Ingeniería Eléctrica.\n"
+        "• Ingeniería Administración.\n"
+        "• Ingeniería Industrial.\n"
+        "• Ingeniería en Sistemas Computacionales."
+    </string>
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <string name="descripcionbecastitulo">
+        "El Tec Huauchinango cuenta con un amplio programa de becas para sus alumnos, destacan:"
+    </string>
+
+    <string name="descripcionbecas">
+        "Beca de Excelencia para Bachilleratos."
+    </string>
+
+    <string name="descripcionbecas2">
+        "Si tienes de 8.5 en adelante en tu promedio"
+        "de bachillerato puedes aspirar a descuentos en la inscripción:"</string>
+
+    <string name="descripcionbecas3">
+        "• Promedio de 8.5 a 8.9: 25% de descuento en inscripción.\n"
+        "• Promedio de 9.0 a 9.4: 50% de descuento en inscripción.\n"
+        "• Promedio de 9.5 a 10.0: 100% de descuento en inscripción.\n"</string>
+
+    <string name="descripcionbecas4">
+    "Becas diversas de la SEP."</string>
+
+    <string name="descripcionbecas5">
+        "I. Servicio Social\n"
+        "II. Residencia Profesional\n"
+        "III. Titulación\n"</string>
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="oferta_electrica_titulo_quehace">"¿Qué hace quien estudia Ingeniería Eléctrica?"</string>
+
+    <string name="oferta_electrica_quehace">
+        "• Diseña, construye, opera y mantiene sistemas de generación, transformación y distribución de energía eléctrica.\n"
+        "• Selecciona, específica y adapta tecnología, equipos y materiales para su instalación, operación y mantenimiento.\n"
+        "• Participa en la administración y toma de decisiones de los recursos humanos, económicos y materiales en la ejecución de proyectos y obras eléctricas.\n\n"
+    </string>
+
+    <string name="oferta_electrica_titulo_donde">¿Dónde se puede desarrollar profesionalmente quien egresa de Ingeniería Eléctrica?</string>
+
+    <string name="oferta_electrica_donde">
+        "Instalaciones eléctricas industriales, micro, pequeñas y medianas empresas de servicio,"
+        "mantenimiento en empresas productoras de conductores electrodomésticos, acumuladores, pilas,"
+        "baterías, etc., telecomunicaciones, empresas de manufactura, centros de investigación,"
+        "instituciones de educación media y superior y en empresas de generación y distribución de energía eléctrica."
+    </string>
+
+    <string name="oferta_electrica_documentos">
+        "Documentos de interés para quien desea estudiar Ingeniería Eléctrica:"
+    </string>
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="oferta_informatica_titulo_quehace">¿Qué hace quien estudia Ingeniería Informática?</string>
+
+    <string name="oferta_informatica_quehace">
+        "• Participa en las áreas de: Diseño, finanzas, manufactura asistida por computadora, control"
+        "automático de inventarios, ventas, mercadotecnia,contabilidad, transacciones comerciales y "
+        "monetarias, entre otras.\n"
+
+        "• Identifica problemas y oportunidades para ofrecer soluciones informáticas."
+    </string>
+
+    <string name="oferta_informatica_titulo_donde">
+        "¿Dónde se puede desarrollar profesionalmente quien egresa de Ingeniería Informática?"
+    </string>
+
+    <string name="oferta_informatica_documentos">
+        "Documentos de interés para quien desea estudiar Ingeniería Informática:"
+    </string>
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <string name="oferta_mecatronica_titulo_quehace">¿Qué hace quien estudia Ingeniería Mecatrónica?</string>
+
+    <string name="oferta_mecatronica_quehace">
+        "• Diseña circuitos electrónicos para aplicaciones industriales y experimentales.\n"
+        "• Automatiza y controla dispositivos de manufactura además de dotarlos de inteligencia.\n"
+        "• Diseña en 3 dimensiones (3D).\n"
+        "• Manejo de control numérico computarizado, programación de redes neuronales artificiales, actuadores neumáticos e hidráulicos, controladores lógicos programables (PLC’s), además de diseñar, programar y dar mantenimiento a robots.\n"
+    </string>
+
+    <string name="oferta_mecatronica_titulo_donde">
+        ¿Dónde se puede desarrollar profesionalmente quien egresa de Ingeniería Mecatrónica?
+    </string>
+
+    <string name="oferta_mecatronica_donde">
+        "Se desarrolla en la industria automotriz y aeroespacial, en las industrias manufactureras,"
+        "en la industria del papel, industria de inyección y moldura de plásticos, "
+        "industria metalmecánica, industria robótica, computacional, eléctrica, electrónica, en la "
+        "educación, en empresas paraestatales, de investigación, de consultoría entre muchas más."
+    </string>
+
+    <string name="oferta_mecatronica_documentos">
+        "Documentos de interés para quien desea estudiar Ingeniería Mecatronica:"
+    </string>
+
+    <string name="oferta_mecatronica_informacion">
+        "Información de Interés para los alumnos de la carrera:"
+    </string>
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <string name="oferta_sistemas_titulo_quehace">
+        ¿Qué hace quien estudia Ingeniería en Sistemas Computacionales?
+    </string>
+
+    <string name="oferta_sistemas_quehace">
+        "• Diseña y desarrolla software, sistemas, soluciones de conectividad (redes) en base a los"
+        "requerimientos del cliente.\n"
+        "• Brinda soporte y asesoría en tecnologías de la información y de la comunicación.\n"
+        "• Administra bases de datos, que es donde se almacena la información principal de una empresa."
+    </string>
+
+    <string name="oferta_sistemas_titulo_donde">
+        ¿Dónde se puede desarrollar profesionalmente quien egresa de Ingeniería en Sistemas Computacionales?
+    </string>
+
+    <string name="oferta_sistemas_donde">
+        "Se puede desarrollar en los campos de seguridad informática e informática forense, micro y "
+        "nano programación, movilidad, etc. Los ingenieros en sistemas computacionales son y serán "
+        "parte trascendental como precursores y desarrolladores del cambio."
+    </string>
+
+    <string name="oferta_sistemas_documentos">
+        "Documentos de interés para quien desea estudiar Ingeniería en Sistemas Computacionales:"
+    </string>
+
+    <string name="oferta_sistemas_informacion">
+        "Documentos de interés para quien desea estudiar Ingeniería en Sistemas Computacionales:"
+    </string>
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <string name="oferta_industtial_titulo_quehace">¿Qué hace quien estudia Ingeniería Industrial?
+    </string>
+
+    <string name="oferta_industrial_quehace">
+        "• Cuenta con la facilidad y la capacidad de adaptarse a cualquier medio ambiente empresarial,"
+        "manteniéndose siempre a la vanguardia tecnológica y siempre concentrado en obtener el"
+        "máximo rendimiento del capital humano, de los recursos materiales, de los financieros y tecnológicos."
+    </string>
+
+    <string name="oferta_industrial_titulo_donde">
+        ¿Dónde se puede desarrollar profesionalmente quien egresa de Ingeniería Industrial?
+</string>
+
+    <string name="oferta_industrial_donde">
+        "Puede llegar a cualquier tipo de empresa para hacer un diagnóstico y un análisis de la"
+        "situación actual en que se encuentra. Si se percata de alguna anomalía, puede formular"
+        "propuestas de mejora. Tiene la capacidad de desarrollar actitudes emprendedoras,"
+        "creativas, de superación personal y liderazgo en su entorno social, con un sentido ético"
+        "administrando sistemas de higiene y seguridad industrial."
+    </string>
+
+    <string name="oferta_industrial_documentos">
+        "Documentos de interés para quien desea estudiar Ingeniería Industrial:"
+    </string>
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <string name="oferta_administracion_titulo_quehace">¿Qué hace quien estudia Ingeniería en Administración?</string>
+
+    <string name="oferta_administracion_quehace">
+        "• Los Ingenieros en Administración gestionan los diferentes recursos sean tangibles o"
+        "intangibles de diversas áreas corporativas de instituciones públicas así como privadas con"
+        "un enfoque lógico y tecnológico, esto como resultado de su formación académica como Ingenieros,"
+        "y armonizándolos con los sistemas administrativos, los cuales se basan en la eficiencia y"
+        "el costo, aumentando la productividad, con el objetivo de generar una organización rentable económicamente."
+    </string>
+
+    <string name="oferta_administracion_titulo_donde">
+        ¿Dónde se puede desarrollar profesionalmente quien egresa de Ingeniería en Administración?</string>
+
+    <string name="oferta_administracion_donde">
+        "Administración de la Producción, Gestión Estratégica, Consultoría, Plan de Negocios,"
+        "Mercadotecnia, Administración Financiera, Contabilidad, Administrativa, Administración de la"
+        "Calidad, Manejo de tecnologías de la información, Participación en la formación de nuevas empresas productivas."
+    </string>
+
+    <string name="oferta_administracion_documentos">
+        "Documentos de interés para quien desea estudiar Ingeniería en Administración:"
+    </string>
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="title_activity_scrolling_modalidad">ScrollingModalidadActivity</string>
+    <string name="title_activity_scrolling_oferta_educativa">ScrollingOfertaEducativaActivity</string>
+
+
+    <string name="title_activity_scrolling_becas">ScrollingBecasActivity</string>
+    <string name="title_activity_oferta_educativa">OfertaEducativaActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="becas">Becas</string>
+    <string name="electrica">Electrica</string>
+    <string name="inform_tica">Informática</string>
+    <string name="mecatr_nica">Mecatrónica</string>
+    <string name="sistemas_computacionales">Sistemas Computacionales</string>
+    <string name="industrial">Industrial</string>
+    <string name="administraci_n">Administración</string>
+    <string name="pagename">PageName</string>
+    <string name="fecha_de_creacion">Fecha de creacion</string>
+    <string name="message">Message</string>
+    <string name="linkurl">LinkURL</string>
+    <string name="nombre_de_la_pagina">Nombre de la pagina</string>
+
+
+    <!--Radio-->
+    <string name="Radio_titulo">"Revolución Informatica"</string>
+    <string name="Radio_cuerpo">
+        "Programa especializado en tecnología e informática. Horario y lugar de transmisión:"
+        "Miércoles a las 07:00 p.m. y Jueves a las 06:00 p.m. por el 98.9 de tu radio por Huauchinango FM."
+    </string>
+
+    <string name="TV_titulo">"TV Tec"</string>
+    <string name="TV_cuerpo">
+        "Programa institucional de revista del ITSH. Horarios y lugares de transmisión:"
+        "Jueves a las 7:00 p.m. por Canal Concepto TV3 en Huauchinango."
+        "Viernes en You Tube: TV TEC."
+        "Sábado a partir de las 9:00 p.m. por Canal TV3 Telexico en Xicotepec."
+        "Sábado en horarios diversos por Canal 46 UNIK TV en La Ceiba (a partir de esta televisora contamos con presencia en Pahuatlán y Venustiano Carranza)."
+
+    </string>
+    <string name="direcciontec">Av. Tecnológico S/N, Col. El Huasteco, C.P. 73049, Lázaro Cárdenas, Puebla</string>
+    <string name="telefonotec">
+        "01 (746) 843 57 53"\n"01 (746) 843 66 28"
+    </string>
+    <string name="correotec">contactoitsh@gmail.com</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="quieres_ver_mas_entra_a_la_paguina_oficial">"¿Quieres ver mas?"\n
+        "Entra a la paguina oficial"</string>
+    <string name="facebookpanteras">https://www.facebook.com/ITSHPUE/</string>
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="itsvc_titulo">"Instituto Tecnológico Superior de Venustiano Carranza"</string>
+
+    <string name="quienes_somos">¿Quienes Somos?</string>
+
+
+    <string name="mision_titulo">Misión</string>
+
+    <string name="mision_texto">
+        "Formar profesionales emprendedores e innovadores, a través del modelo educativo "
+        "de los institutos tecnológicos, sustentado en valores y competencias, comprometidos a "
+        "impulsar el desarrollo ecoeficiente y sustentable de la región."</string>
+    <string name="vision_titulo">Visión</string>
+
+    <string name="vision_texto">
+        "Consolidarnos como una institución líder, que brinde educación "
+        "superior de calidad, proporcionando una formación de excelencia que responda a las "
+        "exigencias en los sectores públicos, privados y sociales, capaces de competir nacionalmente "
+        "en el ámbito científico y tecnológico."</string>
+    <string name="valores_titulo">Valores</string>
+
+
+    <string name="valores_texto">
+        " •Honestidad"\n
+        "•Profesionalismo"\n
+        "•Responsabilidad"\n
+        "•Compromiso"\n
+        "•Eficacia"\n
+    </string>
+    <string name="valores_texto2">
+       " •Respeto"\n
+       "•Lealtad"\n
+       "•Vocación de Servicio"\n
+       "•Tolerancia"\n
+       "•Mexicanidad"\n
+    </string>
+    <string name="title_activity_nostros">Nostros</string>
+
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_oferta_educativa_pericos">OfertaEducativaPericos</string>
+    <string name="title_IIAL">IIAL</string>
+    <string name="title_ISIC">ISIC</string>
+    <string name="title_IFOR">IFOR</string>
+    <string name="title_IGEO">IGEO</string>
+    <string name="title_IGEM">IGEM</string>
+    <string name="title_dashboard">Dashboard</string>
+
+    <string name="title_notifications">Notifications</string>
+    <string name="proposito_titulo">Propósito</string>
+
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <string name="mision_programa_titulo">Misión del Programa Educativo</string>
+
+    <string name="vision_programa_titulo">Visión del Programa Educativo</string>
+
+    <string name="objetives_programa_titulo">Objetivo del Programa Educativo</string>
+
+    <string name="ingreso_programa_titulo">Perfil de Ingreso</string>
+
+    <string name="egreso_programa_titulo">Perfil de Egreso</string>
+
+    <string name="campo_laboral_titulo">Campo Laboral</string>
+
+
+    <string name="especialidad_titulo">Especialidad</string>
+
+    <string name="objetivo_titulo">Objetivo</string>
+
+    <string name="punto">•</string>
+
+    <string name="plan_estudios_titulo">Plan de Estudios</string>
+
+    <string name="reticula">Reticula</string>
+    <string name="ver_reticula_isic">Ver Reticula ISIC</string>
+    <string name="ver_reticula_iial">Ver Reticula IIAL</string>
+    <string name="ver_reticula_ifor">Ver Reticula IFOR </string>
+    <string name="ver_reticula_igeo">Ver Reticula IGEO</string>
+    <string name="ver_reticula_igem">Ver Reticula IGEM</string>
+
+    <string name="titulo_sistemas">Ingeniería en Sistemas Computacionales</string>
+
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="clave_sistemas">ISIC–2010–224</string>
+
+    <string name="proposito_sistemas">
+        "Aquí se preparan profesionales de la ingeniería en Sistemas Computacionales que tendrán"
+        "capacidades analíticas, creativas, críticas y de liderazgo que aporten soluciones"
+        "computacionales en las organizaciones, aplicando las tecnologías de la información,"
+        "valiéndose de las tecnológicas actuales."
+    </string>
+
+
+    <string name="mision_programa_sistemas">
+        "Capacitar a estudiantes mediante herramientas de desarrollo de tecnologías Web y Móviles"
+        "para solventar los diferentes sectores de la localidad, región y del país, que coadyuve a"
+        "la conformación de una sociedad equitativa y humana."
+    </string>
+
+
+    <string name="vision_programa_sistemas">
+        "Convertirnos en la carrera con mayor aporte tecnológico de la región utilizando lo último"
+        "en recursos informáticos con profesionalismo para satisfacer las necesidades con soluciones"
+        "de calidad."
+    </string>
+
+    <string name="objetivo_programa_sistemas">
+        "Formar profesionistas líderes con visión estratégica y amplio sentido ético; capaz de"
+        "diseñar, desarrollar, implementar y administrar tecnología computacional para aportar"
+        "soluciones innovadoras en beneficio de la sociedad; en un contexto global, multidisciplinario"
+        "y sostenible."
+    </string>
+
+    <string name="perfil_ingreso_sistemas">
+        "ELos estudiantes que se interesen por la carrera deberán contar con las siguientes
+        habilidades derivadas del perfil de egreso del nivel medio superior:"\n\n
+
+        "Investigación, análisis y síntesis de información."\n
+        "Criterio y razonamiento lógico para la solución de problemas."\n
+        "Expresión oral y escrita."\n
+        "Actitudes de: respeto, responsabilidad."\n
+        "Interesado en las ciencias exactas y tecnologías de cómputo."\n
+        "Asumir una posición activa con respecto al estudio y al desarrollo de los proyectos y
+        trabajos requeridos"\n
+    </string>
+
+    <string name="perfil_egreso_sistemas">
+        "Implementa aplicaciones computacionales para solucionar problemas de diversos contextos,"
+        "integrando diferentes tecnologías, plataformas o dispositivos."\n
+        "Diseña, desarrolla y aplica modelos computacionales para solucionar problemas, mediante la"
+        "selección y uso de herramientas matemáticas."\n
+        "Diseña e implementa interfaces para la automatización de sistemas de hardware y desarrollo"
+        "del software asociado."\n
+        "Coordina y participa en equipos multidisciplinarios para la aplicación de soluciones"
+        "innovadoras en diferentes contextos."\n
+        "Diseña, implementa y administra bases de datos optimizando los recursos disponibles,"
+        "conforme a las normas vigentes de manejo y seguridad de la información."\n
+        "Desarrolla y administra software para apoyar la productividad y competitividad de las"
+        "organizaciones cumpliendo con estándares de calidad."\n
+        "Evalúa tecnologías de hardware para soportar aplicaciones de manera efectiva."
+        "Detecta áreas de oportunidad empleando una visión empresarial para crear proyectos aplicando"
+        "las Tecnologías de la Información y Comunicación."\n
+        "Diseña, configura y administra redes de computadoras para crear soluciones de conectividad"
+        "en la organización, aplicando las normas y estándares vigentes."\n
+    </string>
+
+    <string name="perfil_egreso_sistemas_light">
+        "Implementa aplicaciones computacionales para solucionar problemas de diversos contextos,"
+        "integrando diferentes tecnologías, plataformas o dispositivos."\n\n
+        "Diseña e implementa interfaces para la automatización de sistemas de hardware y desarrollo"
+        "del software asociado."\n\n
+        "Desarrolla y administra software para apoyar la productividad y competitividad de las"
+        "organizaciones cumpliendo con estándares de calidad."\n\n
+        "Diseña, configura y administra redes de computadoras para crear soluciones de conectividad"
+        "en la organización, aplicando las normas y estándares vigentes."\n\n
+    </string>
+
+    <string name="perfil_egreso_sistemas_1">
+        "Implementa aplicaciones computacionales para solucionar problemas de diversos contextos,"
+        "integrando diferentes tecnologías, plataformas o dispositivos."
+    </string>
+
+    <string name="perfil_egreso_sistemas_2">
+        "Diseña e implementa interfaces para la automatización de sistemas de hardware y desarrollo"
+        "del software asociado."
+    </string>
+
+    <string name="perfil_egreso_sistemas_3">
+        "Desarrolla y administra software para apoyar la productividad y competitividad de las"
+        "organizaciones cumpliendo con estándares de calidad."
+    </string>
+    <string name="perfil_egreso_sistemas_4">
+        "Diseña, configura y administra redes de computadoras para crear soluciones de conectividad"
+        "en la organización, aplicando las normas y estándares vigentes."
+    </string>
+    <string name="perfil_egreso_sistemas_5">
+        "Diseña, implementa y administra bases de datos optimizando los recursos disponibles, "
+        "conforme a las normas vigentes de manejo y seguridad de la información."
+    </string>
+    <string name="perfil_egreso_sistemas_6">
+        "Detecta áreas de oportunidad empleando una visión empresarial para crear proyectos "
+        "aplicando las Tecnologías de la Información y Comunicación."
+    </string>
+
+    <string name="campo_laboral_sistemas">
+        "El ingeniero en Sistemas tiene la facilidad de trabajar prácticamente en cualquier campo laboral, "
+        "hoy en día la industria se mueve a través del manejo de grandes bancos de información por lo que "
+        "siempre será necesario un Ingeniero con el Perfil para mantener esa infraestructura, además de que "
+        "constantemente se desarrollan nuevas tecnologías lo que va abriendo campo para las personas que se "
+        "especialicen en con éste perfil."</string>
+
+
+    <string name="especialidad_sistemas">"Desarrollo en Tecnologías Web y Móviles"</string>
+
+    <string name="titulo_alimentarias">Ingeniería en Industrias Alimentarias</string>
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="clave_alimentarias">IIAL–2010–219</string>
+
+    <string name="proposito_alimentarias">
+        "Formar ingenieros con habilidades científicas y tecnológicas en el área de alimentos, "
+        "que utiliza conocimientos teórico y prácticos para el desarrollo de innovación de productos "
+        "con alto valor agregado desde una perspectiva empresarial."
+    </string>
+
+    <string name="mision_programa_alimentarias">
+        "Formar profesionales con conocimientos y habilidades científicas y tecnológicas aplicadas "
+        "al procesamiento y conservación de alimentos, diseño y operación de empresas, así como "
+        "la formulación y evaluación de proyectos productivos enfocados a la generación de productos "
+        "innovadores, innocuos y con alto valor agradado a través de la integración de cadenas productivas."
+    </string>
+
+    <string name="vision_programa_alimentarias">
+        "Ofrecer un programa académico de calidad y reconocido por los organismos nacionales e internacionales, "
+        "que se fortalezca con la integración de cuerpos y redes académicas para la generación de conocimiento y "
+        "tecnología en el área de Ingeniería en Industrias Alimentarias."
+    </string>
+
+    <string name="objetivo_programa_alimentarias">
+        "Formar profesionistas con bases sólidas científicas, tecnológicas, con actitudes éticas y aptitudes; capaces "
+        "de diseñar, administrar, desarrollar, controlar e innovar sistemas de producción en la industria alimentaria, "
+        "orientados de manera sustentable e integral en el ámbito regional, nacional e internacional."
+    </string>
+
+    <string name="perfil_egreso_alimentarias_1">
+        "Diseñar, crear, aplicar, optimizar, analizar y evaluar, los sistemas de producción "
+        "industrial de alimentos."
+    </string>
+    <string name="perfil_egreso_alimentarias_2">
+        "Desarrollar y aplicar las técnicas tradicionales, emergentes y procedimientos "
+        "microbiológicos para la conservación de los alimentos, de acuerdo a sus propiedades funcionales."
+    </string>
+    <string name="perfil_egreso_alimentarias_3">
+        "Inspeccionar, evaluar y controlar un proceso de producción o producto terminado mediante "
+        "la aplicación de técnicas de evaluación fisicoquímicas y análisis instrumental."
+    </string>
+    <string name="perfil_egreso_alimentarias_4">
+        "Valorar los materiales para el diseño del empaque y embalaje de acuerdo a las condiciones de "
+        "procesamiento y características físicas y químicas de los alimentos."
+    </string>
+    <string name="perfil_egreso_alimentarias_5">
+        "Crear y utilizar tecnología sustentable en la industria alimentaria, reduciendo el impacto ambiental."
+    </string>
+    <string name="perfil_egreso_alimentarias_6">
+        "Establecer estrategias para atender nichos de mercado mediante la comercialización y logística de distribución de alimentos."
+    </string>
+
+    <string name="especialidad_alimentarias">"Especialidad en Seguridad e Inocuidad en la Industria Alimentaria."
+    </string>
+
+    <string name="titulo_forestal">Ingeniería Forestal</string>
+
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="clave_forestal">IFOR–2010–226</string>
+
+    <string name="proposito_forestal">
+        "Formar seres sociales con desarrollo integral mediante la generación y apropiación del "
+        "conocimiento científico, tecnológico y cultural orientado a responder los requerimientos "
+        "del desarrollo forestal sostenible de la nación, mediante la formación de profesionales "
+        "con capacidad técnica, analítica, científica, tecnológica y emprendedora, para el manejo "
+        "sustentable de los recursos forestales en beneficio de la sociedad, con ética y valores."
+    </string>
+
+    <string name="mision_programa_forestal">
+        "Formar seres sociales con desarrollo integral mediante la generación y apropiación del "
+        "conocimiento científico, tecnológico y cultural orientado a responder a los requerimientos "
+        "del desarrollo forestal sostenible de la nación y sus regiones, en los campos de la producción, "
+        "uso, manejo racional y recuperación de los recursos naturales renovables, recursos asociados y "
+        "sus relaciones ecosistémicas; fundamentadas en sólidos conocimientos, producto de la investigación "
+        "científica y humanística, conducentes a proteger la sostenibilidad de la base ambiental de la nación."
+    </string>
+
+    <string name="vision_programa_forestal">
+        "La División de Ingeniería Forestal del Instituto Tecnológico Superior de Venustiano Carranza en el corto "
+        "plazo será una unidad académica consolidada con una comunidad estudiantil que contribuirá significativamente "
+        "al desarrollo forestal de la Nación. Será un programa que imparte educación de buena calidad mediante los procesos "
+        "de docencia, extensión e investigación, líder en su naturaleza en todas sus acciones, actores y modalidades."
+    </string>
+
+    <string name="objetivo_programa_forestal">
+        "Formar profesionales con capacidad técnica, analítica, crítica, reflexiva, científica, tecnológica y emprendedora, para el "
+        "manejo sustentable de los ecosistemas forestales en beneficio de la sociedad, mediante la formación integral, ética y de valores."
+    </string>
+
+    <string name="perfil_egreso_forestal_1">
+        "Elaborar, implementar, evaluar y monitorear programas de manejo sustentable de los ecosistemas forestales."
+    </string>
+    <string name="perfil_egreso_forestal_2">
+        "Promover el desarrollo de la cultura de manejo sustentable de los recursos forestales."
+    </string>
+    <string name="perfil_egreso_forestal_3">
+        "Asesorar en los procesos de transformación y comercialización de los productos forestales "
+        "para generar valor agregado."
+    </string>
+    <string name="perfil_egreso_forestal_4">
+        "Participar en la investigación, generación y transferencia de tecnología apropiada para "
+        "impulsar el crecimiento de la productividad y competitividad del área forestal."
+    </string>
+    <string name="perfil_egreso_forestal_5">
+        "Rehabilitar áreas degradadas para la conservación de ecosistemas forestales."
+    </string>
+    <string name="perfil_egreso_forestal_6">
+        "Evaluar y monitorear los impactos ambientales en los ecosistemas forestales, "
+        "derivados de las actividades antropogénicas y fenómenos naturales."
+    </string>
+
+    <string name="especialidad_forestal">"Especialidad en Seguridad e Inocuidad en la Industria Alimentaria."
+    </string>
+
+    <string name="titulo_geociencias">Ingeniería en Geociencias</string>
+
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="clave_geociencias">IGEO–2010–218</string>
+
+    <string name="proposito_geociencias">
+        "En esta área te formarás como ingeniero en Geociencias con una sólida preparación integral,"
+        " de alta calidad, con capacidad de explotar, cuantificar y aprovechar de manera sustentable "
+        "los recursos naturales, atendiendo la preservación del medio ambiente con empleo de las más "
+        "avanzadas técnicas geológicas y geofísicas."
+    </string>
+
+    <string name="mision_programa_geociencias">
+        "La licenciatura de ingeniería en geociencias del ITSVC, está formada por un equipo interdisciplinario que "
+        "tiene como misión formar profesionistas con habilidades y actitudes competitivas, adquiridas mediante una "
+        "educación integral que permita atender las diversas problemáticas en el campo de las geociencias, aplicando "
+        "conocimientos y técnicas de exploración para el uso y aprovechamiento racional de los recursos naturales, "
+        "fomentando el compromiso científico- tecnológico con la sociedad."
+    </string>
+
+    <string name="vision_programa_geociencias">
+        "Posicionarnos como una institución de educación superior líder en el área de las geociencias, con alto sentido ético "
+        "y socialmente responsable, fomentando en los egresados valores y principios que les permitan destacar en su quehacer "
+        "profesional mediante la aplicación de las competencias adquiridas durante su formación académica."
+    </string>
+
+    <string name="objetivo_programa_geociencias">
+        "Formar profesionales en el área de Ciencias de la Tierra con sólida preparación integral, de alta calidad y amplio sentido ético, "
+        "para explorar, localizar, cuantificar y aprovechar de manera sustentable los recursos naturales,realizar investigación científica y "
+        "evaluar fenómenos naturales, empleando las más avanzadas técnicas inherentes a su campo de desarrollo profesional."
+    </string>
+
+    <string name="perfil_egreso_geociencias_1">
+        "Aplicar métodos de exploración para localizar y evaluar recursos naturales del subsuelo."
+    </string>
+
+    <string name="perfil_egreso_geociencias_2">
+        "Analizar, monitorear y evaluar fenómenos naturales, para determinar las zonas de riesgos geológicos y atmosféricos."
+    </string>
+
+    <string name="perfil_egreso_geociencias_3">
+        "Emplear y actualizar planos, mapas y secciones geológicas y geofísicas."
+    </string>
+    <string name="perfil_egreso_geociencias_4">
+        "Evaluar el impacto ambiental causado por la actividad humana."
+    </string>
+    <string name="perfil_egreso_geociencias_5">
+        "Interpretar fotos aéreas e imágenes de satélite."
+    </string>
+    <string name="perfil_egreso_geociencias_6">
+        "Utilizar adecuadamente las técnicas y procedimientos de campo con base en las leyes, "
+        "reglamentos y códigos vigentes inherentes a su ejercicio profesional."
+    </string>
+
+    <string name="campo_laboral_geociencias_privado_titulo">
+        "Sector Privado"</string>
+    <string name="campo_laboral_geociencias_privado_1">
+        "Exploración y explotación minería."</string>
+    <string name="campo_laboral_geociencias_privado_2">
+        "Industria Petrolera."</string>
+    <string name="campo_laboral_geociencias_privado_3">
+        "Industria de la construcción."</string>
+    <string name="campo_laboral_geociencias_privado_4">
+        "Industria Cementera."</string>
+    <string name="campo_laboral_geociencias_privado_5">
+        "Empresas dedicadas a realizar estudios del ambiente y prevención de riesgos."</string>
+
+    <string name="campo_laboral_geociencias_publico_titulo">
+        "Sector Publico"</string>
+    <string name="campo_laboral_geociencias_publico_1">
+        "Comisión Federal de Electricidad (CFE)"</string>
+    <string name="campo_laboral_geociencias_publico_2">
+        "Comisión Nacional del Agua (CONAGUA)"</string>
+    <string name="campo_laboral_geociencias_publico_3">
+        "Petróleos Mexicanos (PEMEX)"</string>
+    <string name="campo_laboral_geociencias_publico_4">
+        "Instituto Mexicano de Petróleo (IMP)"</string>
+    <string name="campo_laboral_geociencias_publico_5">
+        Secretaría de Comunicaciones y Transportes (SCT)"</string>
+    <string name="campo_laboral_geociencias_publico_6">
+        "Secretaría de Energía (SENER)"</string>
+    <string name="campo_laboral_geociencias_publico_7">
+        "Secretaría Medio Ambiente y Recursos Naturales (SEMARNAT)"</string>
+    <string name="campo_laboral_geociencias_publico_8">
+        "Servicio Geológico Mexicano (SGM)"</string>
+    <string name="campo_laboral_geociencias_publico_9">
+        "Servicio Sismológico Nacional (SMN)"</string>
+    <string name="campo_laboral_geociencias_publico_10">
+        "Centro Nacional de Prevención de Desastres (CENAPRED)"</string>
+
+
+    <string name="especialidad_geociencias">"Exploración de Recursos Naturales"</string>
+
+    <string name="titulo_gestion">Ingeniería en Gestión Empresarial</string>
+
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="clave_gestion">IGEM–2009–201</string>
+
+    <string name="proposito_gestion">
+        "Formar profesionales que contribuyen a la gestión de empresas e innovación de procesos, "
+        "así como el diseño, implementación, y desarrollo de sistemas estratégicos de negocios, "
+        "optimizando los recursos en un entorno global con ética y responsabilidad social"
+    </string>
+
+    <string name="mision_programa_gestion">
+        "Somos una ingeniería dedicada a la formación de profesionales en áreas de gestión, "
+        "innovación y emprendimiento, comprometidos con la mejora continua y practica de "
+        "valores que impacten en la trasformación económica de nuestra región y del país."
+    </string>
+
+    <string name="vision_programa_gestion">
+        "Ser formadores de profesionistas altamente competentes en la creación de empresas "
+        "exitosas e innovadoras, referentes por su capacidad de servir con calidad, eficiencia y "
+        "eficacia en el desarrollo económico de la sociedad."
+    </string>
+
+    <string name="objetivo_programa_gestion">
+        "Formar integralmente profesionales que contribuyan a la gestión de empresas e innovación "
+        "de procesos; así como al diseño, implementación y desarrollo de sistemas estratégicos de "
+        "negocios, optimizando recursos en un entorno global, con ética y responsabilidad social"
+    </string>
+
+    <string name="perfil_egreso_gestion_1">
+        "Desarrollar y aplicar habilidades directivas y la ingeniería en el diseño, creación, "
+        "gestión, desarrollo, fortalecimiento e innovación de las organizaciones, con una "
+        "orientación sistémica y sustentable para la toma de decisiones en forma efectiva."
+    </string>
+    <string name="perfil_egreso_gestion_2">
+        "Diseñar e implementar estrategias de mercadotecnia basadas en información recopilada de "
+        "fuentes primarias y secundarias del consumidor o usuario de algún producto, de acuerdo a "
+        "oportunidades y amenazas del mercado."
+    </string>
+    <string name="perfil_egreso_gestion_3">
+        "Diseñar, evaluar y emprender nuevos negocios y proyectos empresariales, que promuevan el "
+        "desarrollo sustentable y la responsabilidad social, en un mercado competitivo."
+    </string>
+    <string name="perfil_egreso_gestion_4">
+        "Analizar e interpretar la información financiera para detectar oportunidades de "
+        "mejora e inversión en un mundo global, que incidan en la rentabilidad del negocio."
+    </string>
+    <string name="perfil_egreso_gestion_5">
+        "Diseñar e innovar estructuras administrativas y procesos, con base en las necesidades "
+        "de las organizaciones para competir eficientemente en mercados globales."
+    </string>
+    <string name="perfil_egreso_gestion_6">
+        "Analizar e interpretar la economía global para facilitar la toma de decisiones en la organización."
+    </string>
+
+    <string name="especialidad_gestion">"Especialidad"</string>
+
+    <string name="semiescolar">"Ingeniería en Gestión Empresarial (Semi escolarizado)"</string>
+
+    <string name="title_activity_horarios">Horarios</string>
+    <string name="historia_titulo">"Historia"</string>
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="historia_contenido">
+        "Inicia las actividades académicas con las carreras de Ingeniería en Industrias Alimentarias"
+        "e Ingeniería Forestal el día 03 de septiembre del año 2007, en instalaciones provisionales,"
+        "ubicadas en Calle Morelos, esq. con Carretera a Mecapalapa, Venustiano Carranza, Puebla, a "
+        "30 minutos del Municipio de Poza Rica, Veracruz y aproximadamente a 244.5 km. de la Capital "
+        "del Estado. La inauguración de la Unidad Académica Departamental Tipo III, se realizó el 11 "
+        "de enero de 2010."
+    </string>
+
+    <string name="historia_contenido_2">
+        "El 03 de abril de 2009 se firma el Convenio de coordinación para la creación, operación y "
+        "apoyo financiero del Instituto Tecnológico Superior de Venustiano Carranza, celebrado por "
+        "la Secretaría de Educación Pública y el Estado Libre y Soberano de Puebla."
+    </string>
+
+    <string name="historia_contenido_3">
+        "El 28 de Agosto de 2009 se publica en el Periódico Oficial del Estado de Puebla el Decreto "
+        "del Honorable Congreso del Estado por virtud del cual se crea el Organismo Público "
+        "Descentralizado denominado "Instituto Tecnológico Superior de Venustiano Carranza"."
+    </string>
+
+    <string name="historia_contenido_4">
+        "El Instituto Tecnológico Superior de Venustiano Carranza, en la Región de la Sierra Norte "
+        "del Estado de Puebla ha contribuido con el proyecto búsqueda y localización de mantos "
+        "freáticos en las poblaciones de Venustiano Carranza, María Andrea y el Paso, ubicados en el"
+        "Municipio de Venustiano Carraza; mediante estudios geofísicos avanzados; con ésta acción se "
+        "logró encontrar agua y se presentó un proyecto de extracción y aprovechamiento; actualmente "
+        "éste proyecto se está desarrollando y se encuentra en la fase de entubamiento. Esto fue "
+        "posible gracias a la coordinación del Instituto con el Gobierno Municipal y del Estado."
+    </string>
+
+    <string name="historia_contenido_5">
+        "El logro más importante del Instituto es el desarrollo del Proyecto 000000000250028 apoyado"
+        "por el FONSEC SAGARPA-CONACYT con título: “Impacto de la sustitución de la azúcar de caña "
+        "por edulcorantes de alta intensidad en México”, del cual se obtuvieron los siguientes "
+        "productos: Convenios con instituciones internacionales como universidades de Brasil, "
+        "Colombia y España, transferencia de tecnología a nivel regional y nacional; y la "
+        "publicación del libro “Impacto de la sustitución de la azúcar de caña por edulcorantes de "
+        "alta intensidad en México”."
+    </string>
+
+    <string name="Empresa">Empresa</string>
+
+    <string name="Objeto">Objeto</string>
+
+    <!-- ////////////////////////////////////////CONVENIOS//////////////////////////////////////////////////////////////-->
+    <string name="Vigencia">Vigencia</string>
+    <string name="Inicio">Inicio</string>
+    <string name="Terminacion">Terminacion</string>
+    <string name="Sector">Sector</string>
+    <string name="SectorPublico">PUBLICO</string>
+
+
+    <string name="SectorSocial">SOCIAL</string>
+    <string name="SectorPrivado">PRIVADO</string>
+    <string name="Giro">Giro</string>
+    <string name="GiroEdu">EDUCATIVO</string>
+
+    <string name="GiroAli">ALIMENTARIO</string>
+    <string name="GiroPro">PRODUCTIVO</string>
+    <string name="GiroSer">SERVICIOS</string>
+    <string name="Con1Em">
+        "INSTITUTO TECNOLOGICO SUPERIOR DEL ORIENTE DEL ESTADO DE HIDALGO"</string>
+    <string name="Con1Obj">
+        "EL FORTALECIMIENTO DE LA EDUCACION SUPERIOR,"
+        "LA FACILITACION E INCENTIVACION DE LA COOPERACION "
+        "INTERINSTITUCIONAL, EL DESARROLLO ACADEMICO, "
+        "TECNICO Y LA FORMACION E INTERCAMBIO DE RECURSOS HUMANOS"</string>
+
+
+    <string name="Con1Ini">
+        "INSTITUTO TECNOLOGICO SUPERIOR DEL ORIENTE DEL ESTADO DE HIDALGO"</string>
+
+    <string name="Con1Ter">
+        "INSTITUTO TECNOLOGICO SUPERIOR DEL ORIENTE DEL ESTADO DE HIDALGO"</string>
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <string name="Nvo_ingreso1">"¿Aún no decides que estudiar?"</string>
+    <string name="Nvo_ingreso2">"El Instituto Tecnológico Superior de "
+        "Venustiano Carranza es una excelente opción para ti, es un plantel "
+        "en el que nuestros estudiantes reciben una formación integral de "
+        "calidad en los diferentes campos de la ingeniería, adquiriendo las "
+        "herramientas necesarias para integrarse al mundo laboral con éxito."</string>
+    <string name="Nvo_ingreso3">"¡No lo pienses más! y ¡construye tu futuro con nosotros!"</string>
+    <string name="Nvo_ingreso4">"Si tienes alguna duda sobre el trámite de ficha, puedes "
+        "contactarnos por este medio o al correo difusión@itsvc.edu.mx, durante el periodo "
+        "de contingencia generada por la pandemia por Covid-19, te atenderemos ¡¡todos los días!!"
+"</string>
+
+
+    <string name="Req">Requisitos para ficha de examen:</string>
+    <string name="Req1">Todo en copia tamaño carta.</string>
+    <string name="Req2">Copia certificada del acta de nacimiento.</string>
+    <string name="Req3">Copia del certificado de bachillerato o constancia de estudios que acredite estar cursando el ultimo periono del mismo.</string>
+    <string name="Req4">CURP (Formato actualizado).</string>
+    <string name="Req5">Dos fotografias tamaño infantil blanco y negro (Vestimenta formal).</string>
+    <string name="Req6">Cubrir cuota de examen de admision y presentar el comprobante de pago, costo $ 780.00 MN.</string>
+    <string name="Req7">Inscripciones en el Departamento de Servicios Escolares, de lunes a viernes de 9:00 – 18:00 hrs.</string>
+    <string name="Req8">"Copia de identificación oficial (INE cartilla militar o pasaporte) "
+        "si eres menor de edad puedes presentar tu credencial actual de la escuela."</string>
+    <string name="Req9">Costo de inscrpción al semestre $1,100.00</string>
+    <string name="Req10">Comprobante de domicilio no mayor a 3 meses.</string>
+
+
+    <string name="Prom1">Instalaciones modernas.</string>
+    <string name="Prom2">Personal docente calificado.</string>
+    <string name="Prom3">Visitas y practicas de estudio a todo el país.</string>
+    <string name="Prom4">Movilidad estudiantil a otros países.</string>
+    <string name="Req12">Nuestra Oferta Educativa.</string>
+    <string name="Req13">Visita el siguiente link para tu proceso de solicitud de ficha.</string>
+    <string name="Req14">Solicitar ficha</string>
+    <string name="Req15">https://forms.gle/8nvdZ24MSE6DDYyY8</string>
+
+
+    <string name="title_activity_huella">Map</string>
+    <string-array name="carreras">
+        <item>ISIC</item>
+        <item>IIAL</item>
+        <item>IFOR</item>
+        <item>IGEO</item>
+        <item>IGEM</item>
+
+    </string-array>
+    <string-array name="horarios">
+        <item>Sistemas</item>
+        <item>Alimentarias</item>
+        <item>Forestal</item>
+        <item>Geociencias</item>
+        <item>Gestion</item>
+        <item>Gestion (Escolarizado)</item>
+    </string-array>
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <string name="mensaje_director_titulo">Mensaje del director</string>
+
+    <string name="mensaje_director_nombre">Mtro. Marco Antonio Alvarado Fosado</string>
+
+    <string name="mensaje_director_cargo">
+        "Director General del Instituto Tecnológico "
+        "Superior de Venustiano Carranza"</string>
+
+
+    <string name="mensaje_director_txt_1">
+        "A toda la comunidad que integra la familia PericosTec, es un honor tener el privilegio de encabezar "
+        "esta administración y sabedor de todas las necesidades y áreas de oportunidad con las que cuenta "
+        "nuestra institución, para un servidor es un reto atenderlas todas y darle solución a corto plazo para "
+        "beneficio de nuestros estudiantes".</string>
+
+    <string name="mensaje_director_txt_2">
+        "Mi compromiso es hacer de nuestra casa de estudios un lugar donde se promueva el conocimiento, "
+        "la investigación, el emprendimiento, la cultura y el deporte, para que nuestros egresados cuentes "
+        "con una formación integral que fortalezca todas sus competencias para su inserción en el sector "
+        "productivo, así mismo que en las aulas se inculque el respeto, la honestidad, la ética, la gratitud y la responsabilidad."
+    </string>
+    <string name="mensaje_director_txt_3">
+        "Otro de los retos de mi administración es lograr que nuestras carreras cuenten con el reconocimiento "
+        "de un organismo acreditador, lo cual permitirá su posicionamiento a nivel nacional e internacional, "
+        "Fortalecer el intercambio académico de nuestros docentes, como el de nuestros estudiantes con "
+        "estancias académicas dentro y fuera del país, así como gestionar recursos para remodelación y realización "
+        "de nuevos espacios educativos."</string>
+    <string name="mensaje_director_txt_4">
+        "En este nuevo reto en donde la educación se convierte en el principal eje y pilar para el desarrollo de "
+        "nuestro país, el instituto Tecnológico Superior de Venustiano Carranza debe de estar a la vanguardia en "
+        "lo académico e infraestructura."</string>
+    <string name="mensaje_director_txt_5">
+        "No escatimare esfuerzos para lograr colocar a nuestro instituto como la principal casa de estudios de nuestra región, estado y país."
+    </string>
+
+    //////////////
+    <string name="normatividadTitulo">Normatividad</string>
+
+    <string name="normatividad1">Reglamento interior del ITSVC</string>
+    <string name="normatividad2">Reglamento para los Eventos de los Institutos Tecnológicos</string>
+    <string name="normatividad3">Reglamento para los Estudiantes del ITSVC</string>
+    <string name="normatividad4">Reglamento para el Personal No Académico</string>
+    <string name="normatividad5">Reglamento para el Personal Académico</string>
+    <string name="normatividad6">Manual de Estímulos al Desempeño Docente</string>
+    <string name="normatividad7">Reglamento de Actividades Extraescolares</string>
+    <string name="normatividad8">Modelo Educativo para el Siglo XXI</string>
+    <string name="normatividad9">Reglamento de la Ley De Adquisiciones, Arrendamiento y Servicios del Sector Público</string>
+    <string name="normatividad10">Manual de Procedimientos del ITSVC</string>
+    <string name="normatividad11">Manual de Organización del ITSVC</string>
+    <string name="normatividad12">Manual de Lineamientos Académico-Administrativos del Tecnológico Nacional de México</string>
+    <string name="normatividad13">Lineamientos que establecen los requisitos y condiciones que deben reunir el personal académico</string>
+    <string name="normatividad14">Reglamentos del Laboratorio de Química</string>
+    <string name="normatividad15">Reglamentos del Centro de Información</string>
+    <string name="normatividad16">Reglamentos del Centro de Cómputo</string>
+
+    ////////////////////
+    <string name="horario_materia">materia</string>
+    <string name="horario_profesor">profesor</string>
+    <string name="horario_hra_e">hra E</string>
+    <string name="horario_hr_s">hr S</string>
+    <string name="horario_aula">aula</string>
+    <string name="horario_color">color</string>
+    <string name="lunes">Lun</string>
+    <string name="martes">Mar</string>
+    <string name="miercoles">Mie</string>
+    <string name="jueves">Jue</string>
+    <string name="viernes">Vie</string>
+    <string name="chat_individual_txt">Puedes hablar con cualquier usuario registrado, de cualquier carrera.</string>
+    <string name="autor">Josué Isael Hernández Peralta</string>
+    <string name="autor_descripcion">Alumno de la carrera de ingeniería en sistemas computacionales del Instituto Tecnológico Superior de Venustiano Carranza.</string>
+    <string name="documentos_interes">Documentos de interés</string>
+    <string name="bannerID">ca-app-pub-7339146915378942/7241800581</string>
+    <string name="title_activity_feed_scrolling">FeedScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+
+</resources>

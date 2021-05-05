@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme"
+    tools:context=".PantallaMain.OfertaEducativaActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientbackground"
+        android:theme="@style/AppTheme">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/negroprincipal"
+            android:theme="@style/AppTheme"
+            app:tabTextColor="@color/colorPrimary"
+            app:tabSelectedTextColor="@color/grisclaro"
+            app:tabIconTint="@color/colorAccent"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabInlineLabel="true"
+            app:tabMode="scrollable"
+            tools:tabMode="fixed">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/isic_icon"
+                android:text="@string/title_ISIC" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/icono_iial"
+                android:text="@string/title_IIAL" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/icon_ifor"
+                android:text="@string/title_IFOR" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/icon_igeo"
+                android:text="@string/title_IGEO" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItem5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/icon_igem"
+                android:text="@string/title_IGEM" />
+
+
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/idVistaAcercaDialogo"
+    android:background="@drawable/gradientbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/idAcercaToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/interfaz_overlay_bajo_invertida"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme"
+            app:titleTextColor="@color/blanco"
+            android:theme="@style/ToolbarColor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/idAcercaToolbarTexto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/UbuntuTema"
+                    android:layout_gravity="center_vertical"
+                    android:text="Acerca de la aplicación"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/pericostectitulo"
+                    android:contentDescription="@string/todo" />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:id="@+id/btnSalirDialogo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                app:fabSize="mini"
+                app:backgroundTint="@color/rojo_bajo"
+                android:src="@drawable/icono_escencial_error"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/negroprincipal"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:padding="3dp"
+                                android:src="@drawable/pericocontituloyfondo2sombra"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/idAcercadeTitulo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:text="@string/app_name"
+                                    style="@style/UbuntuTema"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:padding="5dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/icono_escencial_proposito"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        style="@style/UbuntuTema"
+                                        android:textSize="16sp"
+                                        android:text="Versión:"/>
+                                    <TextView
+                                        android:id="@+id/idTVnombreVersion"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        style="@style/UbuntuTema"
+                                        android:text=""
+                                        android:textColor="@color/grisclaro"/>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/idAcercaLicencia"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:padding="5dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/icono_vision"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        style="@style/UbuntuTema"
+                                        android:text="Ver Licencias"
+                                        android:textColor="@color/grisclaro"/>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/idAcercadePlayeridLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:visibility="gone"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:padding="5dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/icono_escencial_smartphone"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/idAcercadePlayerid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        style="@style/UbuntuTema"
+                                        android:textIsSelectable="true"
+                                        android:text=""
+                                        android:textColor="@color/grisclaro"/>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/negroprincipal"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="5dp"
+                                android:padding="3dp"
+                                android:src="@drawable/avatar"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Autor de la aplicación"
+                                    style="@style/UbuntuTema"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/icono_escencial_usuario"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        style="@style/UbuntuTema"
+                                        android:textSize="16sp"
+                                        android:text="@string/autor"/>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/UbuntuTema"
+                                android:textStyle="italic"
+                                android:text="@string/autor_descripcion"
+                                android:textSize="14sp"
+                                android:textColor="@color/grisclaro"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/negroprincipal"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:padding="3dp"
+                                android:src="@drawable/icono_estudiante_credencial"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Contacta con el autor"
+                                    style="@style/UbuntuTema"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:padding="5dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/icono_escencial_correo1"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        style="@style/UbuntuTema"
+                                        android:textSize="16sp"
+                                        android:text="Correo:"/>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="4dp"
+                                        style="@style/UbuntuTema"
+                                        android:textStyle="bold"
+                                        android:text="josuehdzp@outloock.com"
+                                        android:autoLink="email"
+                                        android:textColor="@color/grisclaro"/>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="4dp"
+                                        style="@style/UbuntuTema"
+                                        android:autoLink="email"
+                                        android:textStyle="bold"
+                                        android:text="josue.hernandez17@itsvc.edu.mx"
+                                        android:textColor="@color/grisclaro"/>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="4dp"
+                                        style="@style/UbuntuTema"
+                                        android:text="darkai1717@gmail.com"
+                                        android:textStyle="bold"
+                                        android:autoLink="email"
+                                        android:textColor="@color/grisclaro"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
